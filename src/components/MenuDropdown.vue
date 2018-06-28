@@ -27,8 +27,11 @@
 
     methods: {
       setCurrent(index) {
-        this.currentIndex = index;
-        //this.$emit('update:title', newTitle)
+        // Do anything only if index changed
+        if (this.currentIndex !== index) {
+          this.currentIndex = index;
+          this.$emit('changed', index);
+        }
       }
     }
   };

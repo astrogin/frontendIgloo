@@ -2,3 +2,8 @@ body {
     margin: 0px;
     font-family: colosseum, sans-serif;
 }
+
+.profile {
+    margin: 30px 45px 0 0 !important;
+    padding-bottom: 0 !important;
+}
