@@ -18,8 +18,8 @@
       <el-popover
       placement="bottom"
       width="245"
-      @show="profileTrigger"
-      @hide="profileTrigger"
+      @show="isProfileOpened = true"
+      @hide="isProfileOpened = false"
       :visible-arrow="false"
       trigger="click"
       popper-class="profile">
@@ -154,9 +154,6 @@
         ],
       };
     },
-    computed: {
-
-    },
 
     methods: {
       changeCurrency(newCurrency) {
@@ -169,10 +166,6 @@
         // get string by index
         const s = this.languagesElements[newLanguage];
         console.log(s);
-      },
-
-      profileTrigger() {
-        this.isProfileOpened = !this.isProfileOpened;
       },
     },
   };
