@@ -1,4 +1,4 @@
-require('./icon-library');
+import './icon-library';
 
 import Vue from 'vue';
 import App from './App.vue';

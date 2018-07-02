@@ -10,6 +10,9 @@
     <slot/>
     <span slot="reference" class="pointer">
       <slot name="reference"/>
+      <span :class="{'item-purple': isOpened}">
+        <slot name="color"/>
+      </span>
     </span>
   </el-popover>
 </template>
