@@ -1,0 +1,28 @@
+$text-purple-color: #7929a6;
+
+@import './header.scss';
+
+body {
+  margin: 0px;
+  font-family: colosseum, sans-serif;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-purple {
+  color: $text-purple-color;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.button-purple {
+  border-color: #d1b7df !important;
+}
+
+.button-purple:hover {
+  border-color: #b69dc4 !important;
+}
