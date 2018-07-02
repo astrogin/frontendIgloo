@@ -1,11 +1,12 @@
 <template>
   <header-popover width="450">
-    <p>Some content</p>
+    <div>
+      <span class="popover-item">Recent</span>
+      <span class="popover-item">Accepted experience</span>
+    </div>
 
-    <span slot="reference">
-      <span href="#" class="header-item item-text">
-        <font-awesome-icon icon="comments" size="lg"/>
-      </span>
+    <span slot="color" class="header-item item-text">
+      <font-awesome-icon icon="comments" size="lg"/>
     </span>
   </header-popover>
 </template>
@@ -25,3 +26,8 @@
   };
 </script>
 
+<style scoped>
+  .popover-item {
+    margin: 13px;
+  }
+</style>

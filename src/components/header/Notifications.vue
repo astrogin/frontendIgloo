@@ -3,7 +3,7 @@
     <p>Some notifications content</p>
 
     <span slot="reference">
-      <span href="#" class="header-item item-text">
+      <span class="header-item item-text">
         <font-awesome-icon icon="bell" size="lg"/>
       </span>
     </span>

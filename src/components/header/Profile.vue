@@ -14,13 +14,8 @@
       </li>
     </ul>
 
-    <span slot="reference">
-      <img src="http://via.placeholder.com/45x45" class="header-item item-img">
-      <span
-        :class="{'item-purple': isProfileOpened}"
-        class="header-item item-text">Christina
-      </span>
-    </span>
+    <img slot="reference" src="http://via.placeholder.com/45x45" class="header-item item-img">
+    <span slot="color" class="header-item item-text">Christina</span>
   </header-popover>
 </template>
 

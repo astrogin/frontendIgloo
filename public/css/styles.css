@@ -32,6 +32,10 @@ body {
     margin-right: 26px !important;
 }
 
+.item-purple > .item-text {
+  color: #7929a6;
+}
+
 .item-text {
     margin: 21px 26px 0 0;
     color: #9B9B9B;
@@ -48,10 +52,6 @@ body {
 .item-button {
     margin-bottom: 5px !important;
     vertical-align: middle;
-}
-
-.item-purple {
-    color: #7929a6;
 }
 
 .header-divider {
