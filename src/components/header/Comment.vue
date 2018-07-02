@@ -36,7 +36,6 @@
 </script>
 
 <style scoped>
-
   .comment {
     margin: 25px 15px 0 20px;
   }

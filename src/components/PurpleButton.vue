@@ -1,13 +1,7 @@
 <template>
-  <el-button class="button-purple" size="small" plain round>
-    <span class="button-text-purple">
+  <el-button class="button-purple" size="medium" plain round>
+    <span class="text-purple text-bold">
       <slot/>
     </span>
   </el-button>
 </template>
-
-<script>
-  export default {
-
-  };
-</script>

@@ -7,6 +7,7 @@ import store from './store/';
 
 import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import './assets/styles/app.css';
 
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 

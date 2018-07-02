@@ -99,7 +99,7 @@ li.header-profile-item > a:link, li.header-profile-item > a:visited {
 
 .popover-item {
   margin: 13px;
-  font-size: 1.3em;
+  font-size: 1.14em;
   color: gray;
 }
 
@@ -108,8 +108,11 @@ li.header-profile-item > a:link, li.header-profile-item > a:visited {
   float: right;
 }
 
-.button-text-purple {
+.text-purple {
   color: #7929a6;
+}
+
+.text-bold {
   font-weight: bold;
 }
 

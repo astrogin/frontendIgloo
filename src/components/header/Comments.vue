@@ -1,7 +1,7 @@
 <template>
   <header-popover width="450">
     <div>
-      <span class="popover-item">Recent</span>
+      <span class="popover-item text-purple">Recent</span>
       <span class="popover-item">Accepted experience</span>
     </div>
 
