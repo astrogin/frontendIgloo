@@ -13,8 +13,11 @@
     <el-row>
       <el-col>
         <el-form ref="form" :model="form">
-          <el-form-item>
-            <el-input v-model="form.email" placeholder="Email address">
+          <el-form-item required>
+            <el-input
+              v-model="form.email"
+              type="email"
+              placeholder="Email address">
               <font-awesome-icon
                 slot="prefix"
                 size="lg"
@@ -22,8 +25,9 @@
                 class="el-input__icon"/>
             </el-input>
           </el-form-item>
-          <el-form-item>
-            <el-input v-model="form.password" type="password" placeholder="Password">
+          <el-form-item required>
+            <el-input
+              v-model="form.password" type="password" placeholder="Password">
               <font-awesome-icon
                 slot="prefix"
                 size="lg"
@@ -32,7 +36,15 @@
             </el-input>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" @click="onSubmit">Create</el-button>
+            <el-checkbox v-model="form.rememberMe">Remember me</el-checkbox>
+            <div class="dialog-form-right">
+              <a href="#" class="dialog-form-text dialog-secondary-text">
+                Forgot password
+              </a>
+              <cbutton class="dialog-form-button" @click="handleSubmit">
+                Sign in
+              </cbutton>
+            </div>
           </el-form-item>
         </el-form>
       </el-col>
@@ -43,30 +55,27 @@
 <script>
   import SignInFacebook from '@/components/loginCards/SignInFacebook.vue';
   import SignInGoogle from '@/components/loginCards/SignInGoogle.vue';
+  import ColorfulButton from '@/components/ColorfulButton.vue';
 
   export default {
     components: {
       SignInFacebook,
       SignInGoogle,
+      'cbutton': ColorfulButton,
     },
     data() {
       return {
         form: {
           email: '',
           password: '',
+          rememberMe: false,
         },
       };
     },
     methods: {
-      onSubmit() {
+      handleSubmit() {
 
       },
     },
   };
 </script>
-
-<style scoped>
-  .el-input__icon {
-    padding: 0 5px;
-  }
-</style>

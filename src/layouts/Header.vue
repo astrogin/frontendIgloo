@@ -5,7 +5,9 @@
     </span>
 
     <span class="header-right">
-      <colorful-button class="header-item item-button" text="Become a Host"/>
+      <colorful-button class="header-item item-button">
+        Become a Host
+      </colorful-button>
 
       <menu-dropdown
         :elements="currencyElements"

@@ -1,8 +1,12 @@
 .card {
-  margin: auto;
+  margin: 15px auto;
   width: 265px;
   height: 80px;
   background-repeat: no-repeat;
+
+  @media (min-width: $size-md) {
+    margin: auto;
+  }
 
   &-facebook {
     background-image: url(https://cdn.worldvectorlogo.com/logos/facebook-2.svg);

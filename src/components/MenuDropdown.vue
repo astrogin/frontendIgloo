@@ -4,25 +4,33 @@
       {{currentElement}} <font-awesome-icon icon="angle-down"/>
     </span>
     <el-dropdown-menu slot="dropdown">
-      <el-dropdown-item v-for="(element, index) in elements" :key="index" :command="index">{{element}}</el-dropdown-item>
+      <el-dropdown-item
+        v-for="(element, index) in elements"
+        :key="index"
+        :command="index">
+        {{element}}
+      </el-dropdown-item>
     </el-dropdown-menu>
   </el-dropdown>
 </template>
 
 <script>
   export default {
+    props: {
+      elements: {
+        type: Array,
+        default: () => [],
+      },
+    },
     data() {
       return {
         currentIndex: 0,
-      }
-    },
-    props: {
-      elements: Array,
+      };
     },
     computed: {
       currentElement() {
         return this.elements[this.currentIndex];
-      }
+      },
     },
 
     methods: {
@@ -32,8 +40,8 @@
           this.currentIndex = index;
           this.$emit('changed', index);
         }
-      }
-    }
+      },
+    },
   };
 </script>
 
