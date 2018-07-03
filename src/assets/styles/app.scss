@@ -1,10 +1,16 @@
 $text-purple-color: #7929a6;
 
 @import './header.scss';
+@import './dialog.scss';
+@import './logincard.scss';
 
 body {
   margin: 0px;
   font-family: colosseum, sans-serif;
+}
+
+.w100 {
+  width: 100%;
 }
 
 .pointer {

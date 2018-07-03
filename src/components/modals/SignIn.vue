@@ -1,9 +1,16 @@
 <template>
-  <span>This is a sign in</span>
+  <div>
+    <login-card/>
+  </div>
 </template>
 
 <script>
-  export default {
 
+  import LoginCard from '@/components/LoginCard.vue';
+
+  export default {
+    components: {
+      LoginCard,
+    },
   };
 </script>

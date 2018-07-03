@@ -6,9 +6,9 @@
     center
     width="40%">
     <component :is="modalComponent"/>
-    <span slot="footer" class="dialog-footer">
+    <div slot="footer" class="dialog-footer">
       <component :is="modalComponentFooter"/>
-    </span>
+    </div>
   </el-dialog>
 </template>
 
@@ -36,4 +36,3 @@
     },
   };
 </script>
-

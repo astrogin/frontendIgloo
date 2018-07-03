@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <div style="width: 100%;">
+    <div class="w100">
       <app-header/>
       <router-view/>
       <modal-container/>
@@ -17,14 +17,8 @@
       'app-header': Header,
       ModalContainer,
     },
-    data() {
-      return {
-
-      };
-    },
   };
 </script>
-
 
 <style lang="scss">
    @import './assets/styles/app.scss';
