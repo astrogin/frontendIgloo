@@ -55,7 +55,11 @@
     font-size: 1.2em;
     margin-bottom: 20px;
   }
-  
+}
+
+li.header-profile-item > a:link, li.header-profile-item > a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .title-bold {
@@ -82,11 +86,6 @@
 .item-button {
   margin-bottom: 5px !important;
   vertical-align: middle;
-}
-
-li.header-profile-item > a:link, li.header-profile-item > a:visited {
-  text-decoration: none;
-  color: inherit;
 }
 
 .popover-item {
