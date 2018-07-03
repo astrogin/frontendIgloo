@@ -1,3 +1,6 @@
 <template>
-  <span>Already have GoAround acount? <a href="#">Sign in</a></span>
+  <span class="dialog-footer-text">
+    Already have GoAround acount?
+    <a href="#" class="dialog-secondary-text">Sign in</a>
+  </span>
 </template>
