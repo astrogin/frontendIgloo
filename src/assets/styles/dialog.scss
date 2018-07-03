@@ -1,0 +1,76 @@
+$gray_text: #b9b8b9;
+
+.el-dialog {
+  width: 100% !important;
+
+  @media (min-width: $size-md) {
+    width: 80% !important;
+  }
+
+  @media (min-width: $size-lg) {
+    width: 60% !important;
+  }
+
+  @media (min-width: $size-xl) {
+    width: 40% !important;
+  }
+}
+
+.el-dialog__footer {
+  border-top: 1px solid #e1e0e1;
+}
+
+.dialog {
+  &-title {
+    text-align: center;
+    font-size: 3em;
+    color: $gray_text;
+  }
+
+  &-subtitle {
+    text-align: center;
+    font-size: 2.3em;
+    margin: 25px 0;
+    color: $gray_text;
+  }
+
+  &-footer {
+    padding: 40px;
+
+    &-text {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: $gray_text;
+    }
+  }
+
+  &-form {
+    &-right {
+      float: right;
+    }
+
+    &-button {
+      width: 160px;
+    }
+
+    &-text {
+      font-size: 1.2em;
+      margin-right: 20px;
+    }
+  }
+
+  &-secondary-text {
+    color: #7929a6;
+    text-decoration: none;
+  }
+}
+
+.el-input__icon {
+  padding: 0 5px;
+}
+
+.el-checkbox__label {
+  font-size: 1.2em !important;
+  color: $gray_text;
+  font-weight: bold;
+}

@@ -1,15 +1,21 @@
 <template>
-  <div style="width: 100%;">
-    <app-header/>
+  <div>
+    <p>Some homepage 1</p>
+    <el-button @click.native="openSignUp">Sign Up</el-button>
+    <el-button @click.native="openSignIn">Sign In</el-button>
   </div>
 </template>
 
 <script>
-  import Header from '@/layouts/Header.vue';
+
+  import {mapActions} from 'vuex';
 
   export default {
-    components: {
-      'app-header': Header,
+    methods: {
+      ...mapActions([
+        'openSignIn',
+        'openSignUp',
+      ]),
     },
   };
 </script>

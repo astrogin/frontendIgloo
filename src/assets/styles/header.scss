@@ -2,29 +2,68 @@
   height: 65px;
   border-bottom: 1px solid lightgray;
   padding: 0 49px 0 49px;
+
+  &-title {
+    text-transform: uppercase;
+    color: $text-purple-color;
+    font-size: 1.53em;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 17px;
+  }
+
+  &-right {
+    height: 100%;
+    float: right;
+  }
+
+  &-item {
+    display: inline-block;
+    margin-right: 26px !important;
+  }
+
+  .header-divider {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2px;
+    height: 60%;
+    margin: 0 20px 6px 0;
+    background-color: lightgray;
+  }
+  
+  &-popup {
+    margin: 30px 45px 0 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  &-profile-list {
+    list-style-type: none;
+    padding-left: 16px;
+  }
+  
+  &-profile-badge {
+    padding: 0 10px;
+    border-radius: 35%;
+    background-color: $text-purple-color;
+    color: white;
+    float: right;
+    vertical-align: middle;
+    font-size: 0.85em;
+  }
+  
+  &-profile-item {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
 }
 
-.header-title {
-  text-transform: uppercase;
-  color: $text-purple-color;
-  font-size: 1.53em;
-  font-weight: 500;
-  display: inline-block;
-  margin-top: 17px;
+li.header-profile-item > a:link, li.header-profile-item > a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .title-bold {
   font-weight: 700;
-}
-
-.header-right {
-  height: 100%;
-  float: right;
-}
-
-.header-item {
-  display: inline-block;
-  margin-right: 26px !important;
 }
 
 .item-purple > .item-text {
@@ -47,45 +86,6 @@
 .item-button {
   margin-bottom: 5px !important;
   vertical-align: middle;
-}
-
-.header-divider {
-  display: inline-block;
-  vertical-align: middle;
-  width: 2px;
-  height: 60%;
-  margin: 0 20px 6px 0;
-  background-color: lightgray;
-}
-
-.header-popup {
-  margin: 30px 45px 0 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.header-profile-list {
-  list-style-type: none;
-  padding-left: 16px;
-}
-
-.header-profile-badge {
-  padding: 0 10px;
-  border-radius: 35%;
-  background-color: $text-purple-color;
-  color: white;
-  float: right;
-  vertical-align: middle;
-  font-size: 0.85em;
-}
-
-.header-profile-item {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-li.header-profile-item > a:link, li.header-profile-item > a:visited {
-  text-decoration: none;
-  color: inherit;
 }
 
 .popover-item {
