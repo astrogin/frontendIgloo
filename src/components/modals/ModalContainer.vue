@@ -3,9 +3,12 @@
     :visible="modalState"
     :before-close="handleClose"
     :close-on-click-modal="true"
-    title="Tips"
-    width="30%">
+    center
+    width="40%">
     <component :is="modalComponent"/>
+    <span slot="footer" class="dialog-footer">
+      <component :is="modalComponentFooter"/>
+    </span>
   </el-dialog>
 </template>
 
@@ -15,12 +18,12 @@
   export default {
     computed: {
       ...mapGetters([
-        'modalComponent',
         'modalState',
+        'modalComponent',
+        'modalComponentFooter',
       ]),
     },
     methods: {
-
       ...mapActions([
         'closeModal',
       ]),
