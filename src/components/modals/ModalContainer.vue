@@ -4,7 +4,7 @@
     :before-close="handleClose"
     :close-on-click-modal="true"
     center
-    width="40%">
+    custom-class="dialog">
     <component :is="modalComponent"/>
     <div slot="footer" class="dialog-footer">
       <component :is="modalComponentFooter"/>
