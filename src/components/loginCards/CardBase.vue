@@ -9,11 +9,11 @@
     props: {
       imageClass: {
         type: String,
-        default: null,
+        required: true,
       },
       textClass: {
         type: String,
-        default: null,
+        required: true,
       },
     },
   };

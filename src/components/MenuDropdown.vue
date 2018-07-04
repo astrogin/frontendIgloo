@@ -19,7 +19,7 @@
     props: {
       elements: {
         type: Array,
-        default: () => [],
+        required: true,
       },
     },
     data() {

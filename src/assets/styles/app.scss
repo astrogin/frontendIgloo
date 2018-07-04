@@ -9,6 +9,7 @@ $text-purple-color: #7929a6;
 @import './header.scss';
 @import './dialog.scss';
 @import './logincard.scss';
+@import './notifications.scss';
 
 body {
   margin: 0px;
@@ -37,4 +38,8 @@ body {
 
 .button-purple:hover {
   border-color: #b69dc4 !important;
+}
+
+.clearfix {
+  overflow: auto;
 }

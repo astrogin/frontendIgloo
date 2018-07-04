@@ -22,7 +22,7 @@
     props: {
       width: {
         type: String,
-        default: null,
+        required: true,
       },
     },
     data() {
