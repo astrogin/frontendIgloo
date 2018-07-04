@@ -27,6 +27,25 @@ $gray_text: #b9b8b9;
     color: $gray_text;
   }
 
+  &-title-row {
+    margin-bottom: 20px;
+  }
+
+  &-title-left {
+    text-align: left;
+    font-size: 2.5em;
+    color: $gray_text;
+  }
+
+  &-title-small {
+    color: $gray_text;
+    font-weight: bold;
+    font-size: 1.1em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
   &-subtitle {
     text-align: center;
     font-size: 2.3em;
@@ -57,10 +76,25 @@ $gray_text: #b9b8b9;
       font-size: 1.2em;
       margin-right: 20px;
     }
+
+    &-information {
+      margin-top: 35px;
+
+      &-title {
+        color: $gray_text;
+        font-size: 1.4em;
+        font-weight: bold;
+      }
+
+      &-subtitle {
+        margin: 5px 0;
+        color: $gray_text;
+      }
+    }
   }
 
   &-secondary-text {
-    color: #7929a6;
+    color: $text-purple-color;
     text-decoration: none;
   }
 }
