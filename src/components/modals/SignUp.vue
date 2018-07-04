@@ -1,31 +1,28 @@
 <template>
-  <div>
-    <el-row><el-col><h1 class="dialog-title">Sign Up</h1></el-col></el-row>
-    <el-row>
-      <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-        <sign-up-facebook/>
-      </el-col>
-      <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-        <sign-up-google/>
-      </el-col>
-      <el-row><el-col><div class="dialog-subtitle">Or</div></el-col></el-row>
-    </el-row>
-    <el-row><el-col><sign-up-email/></el-col></el-row>
-  </div>
+  <transition name="zoom">
+    <component :is="state" @click="changeState"/>
+  </transition>
 </template>
 
 <script>
 
-  import SignUpFacebook from '@/components/loginCards/SignUpFacebook.vue';
-  import SignUpGoogle from '@/components/loginCards/SignUpGoogle.vue';
-  import SignUpEmail from '@/components/loginCards/SignUpEmail.vue';
-
+  import SignUp1 from '@/components/modals/SignUp.1.vue';
+  import SignUp2 from '@/components/modals/SignUp.2.vue';
 
   export default {
     components: {
-      SignUpFacebook,
-      SignUpGoogle,
-      SignUpEmail,
+      SignUp1,
+      SignUp2,
+    },
+    data() {
+      return {
+        state: SignUp1,
+      };
+    },
+    methods: {
+      changeState() {
+        this.state = SignUp2;
+      },
     },
   };
 </script>

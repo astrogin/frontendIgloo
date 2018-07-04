@@ -8,6 +8,10 @@
     margin: auto;
   }
 
+  &:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5) !important;
+  }
+
   &-facebook {
     background-image: url(https://cdn.worldvectorlogo.com/logos/facebook-2.svg);
     background-size: 20%;
@@ -34,6 +38,7 @@
     position: relative;
     left: 100px;
     width: 50%;
+    cursor: default;
 
     &-facebook {
       color: #3c5a9a;

@@ -8,11 +8,11 @@
       <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
         <sign-in-google/>
       </el-col>
-      <el-row><el-col><div class="dialog-subtitle">Or</div></el-col></el-row>
     </el-row>
+    <el-row><el-col><div class="dialog-subtitle">Or</div></el-col></el-row>
     <el-row>
       <el-col>
-        <el-form ref="form" :model="form">
+        <el-form :model="form">
           <el-form-item required>
             <el-input
               v-model="form.email"
