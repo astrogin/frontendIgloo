@@ -35,7 +35,9 @@
     </div>
 
     <span slot="color" class="header-item item-text">
-      <font-awesome-icon icon="bell" size="lg"/>
+      <el-badge is-dot class="dot-badge">
+        <font-awesome-icon icon="bell" size="lg"/>
+      </el-badge>
     </span>
   </header-popover>
 </template>
