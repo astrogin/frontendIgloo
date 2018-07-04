@@ -21,15 +21,15 @@
     props: {
       author: {
         type: String,
-        default: null,
+        required: true,
       },
       date: {
         type: String,
-        default: null,
+        required: true,
       },
       text: {
         type: String,
-        default: null,
+        required: true,
       },
     },
   };
@@ -60,9 +60,5 @@
     float: right;
     color: gray;
     font-size: 0.9em;
-  }
-
-  .clearfix {
-    overflow: auto;
   }
 </style>
