@@ -29,38 +29,18 @@
   import Comment from './Comment';
   import PurpleButton from '@/components/PurpleButton.vue';
 
+  import {mapGetters} from 'vuex';
+
   export default {
     components: {
       'header-popover': Popover,
       Comment,
       PurpleButton,
     },
-    data() {
-      return {
-        comments: [
-          {
-            author: 'Jessica Liu',
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscisou satwa gwa',
-            date: '2 hr ago',
-          },
-          {
-            author: 'Tommy Hilley',
-            text: 'Aliquip ex ea commodo consequat',
-            date: '1 day ago',
-          },
-          {
-            author: 'Kel Duchadin',
-            text: 'Duis aute irure dolor',
-            date: 'March 31',
-          },
-          {
-            author: 'Delen McEledery',
-            text: 'Lotam rem aperiam',
-            date: 'March 12',
-          },
-        ],
-      };
+    computed: {
+      ...mapGetters([
+        'comments',
+      ]),
     },
   };
 </script>
