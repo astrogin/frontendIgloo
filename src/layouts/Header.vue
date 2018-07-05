@@ -18,6 +18,7 @@
         :elements="languagesElements"
         class="header-item item-text"
         @changed="changeLanguage"/>
+
       <span class="header-divider"/>
 
       <a href="#" class="header-item item-text">My Booking</a>
@@ -41,9 +42,9 @@
     components: {
       MenuDropdown,
       ColorfulButton,
-      'header-profile': HeaderProfile,
-      'header-comments': HeaderComments,
-      'header-notifications': HeaderNotifications,
+      HeaderProfile,
+      HeaderComments,
+      HeaderNotifications,
     },
 
     data() {

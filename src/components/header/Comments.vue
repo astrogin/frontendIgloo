@@ -25,7 +25,7 @@
 </template>
 
 <script>
-  import Popover from './Popover';
+  import HeaderPopover from './Popover';
   import Comment from './Comment';
   import PurpleButton from '@/components/PurpleButton.vue';
 
@@ -33,7 +33,7 @@
 
   export default {
     components: {
-      'header-popover': Popover,
+      HeaderPopover,
       Comment,
       PurpleButton,
     },
