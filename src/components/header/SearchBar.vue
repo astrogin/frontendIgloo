@@ -12,8 +12,8 @@
     </el-col>
 
     <el-col :span="18">
-      <base-filter width="500" text="Date &amp; Time">
-        <div>hello</div>
+      <base-filter width="620" text="Date &amp; Time">
+        <date-picker/>
       </base-filter>
       <base-filter width="100" text="Guests">
         <div>hello</div>
@@ -36,14 +36,18 @@
 
 <script>
   import BaseFilter from './BaseFilter';
+  import DatePicker from '@/components/DatePicker.vue';
 
   export default {
     components: {
       BaseFilter,
+      DatePicker,
     },
     data() {
       return {
+        nowDate: new Date().setHours(-24, 0, 0, 0),
         searchInput: '',
+        date: [],
       };
     },
   };
