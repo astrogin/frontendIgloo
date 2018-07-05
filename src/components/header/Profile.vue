@@ -34,6 +34,7 @@
           {title: 'Review', link: '#'},
           {title: 'Account settings', link: '#'},
           {title: 'Refer host', link: '#'},
+          {title: 'Logout', link: '#'},
         ],
       };
     },
