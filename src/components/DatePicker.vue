@@ -44,14 +44,14 @@
           :array="currentMonthArray"
           :selected-days="selectedDates"
           :week-titles="weekTitles"
-          @day-click="handleDayClick"/>
+          :uniq-key="currentDate.getMonth() + '' + currentDate.getFullYear()"/>
       </el-col>
       <el-col :span="12">
         <date-picker-month
           :array="nextMonthArray"
           :selected-days="selectedDates"
           :week-titles="weekTitles"
-          @day-click="handleDayClick"/>
+          :uniq-key="nextMonthDate.getMonth() + ''+ nextMonthDate.getFullYear()"/>
       </el-col>
     </el-row>
   </div>
@@ -96,17 +96,6 @@
     methods: {
       getMonthName(month) {
         return getMonthName(month, this.monthTitles);
-      },
-      handleDayClick(day) {
-        const sDay = day.toString();
-
-        const fDay = this.selectedDates.indexOf(sDay);
-
-        if (fDay === -1) {
-          this.selectedDates.push(sDay);
-        } else {
-          this.selectedDates.splice(fDay, 1);
-        }
       },
       handleMonthArray(date) {
         const d = new Date(date);

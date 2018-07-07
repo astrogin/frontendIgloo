@@ -9,11 +9,13 @@
       </th>
     </tr>
     <tr v-for="i in 5" :key="'week' + i">
-      <th v-for="j in 7" :key="'day' + j + 'ofweek' + i">
-        <span
-          :ref="array[7*(i-1)+j-1]"
-          class="pointer"
-          @click="handleMonthClick(array, 7*(i-1)+j-1)">
+      <th
+        v-for="j in 7" :key="'day' + j + 'ofweek' + i + uniqKey"
+        :ref="array[7*(i-1)+j-1]"
+        :class="{'datepicker-selected': isSelected(7*(i-1)+j-1)}"
+        class="pointer"
+        @click="handleMonthClick(array, 7*(i-1)+j-1)">
+        <span>
           {{getDayOfMonth(array, 7*(i-1)+j-1)}}
         </span>
       </th>
@@ -27,11 +29,7 @@
       array: {type: Array, required: true},
       weekTitles: {type: Array, required: true},
       selectedDays: {type: Array, required: true},
-    },
-    data() {
-      return {
-        selectedDates: [],
-      };
+      uniqKey: {type: String, required: true},
     },
     methods: {
       getDayOfMonth(array, index) {
@@ -39,17 +37,29 @@
         array[index] === '' ? '' : array[index].getDate();
       },
       handleMonthClick(array, index) {
-        this.$emit('day-click', array[index]);
-
         const el = array[index].toString();
 
-        const isSelected = this.selectedDates.indexOf(el) !== -1;
+        if (el === '') {
+          return;
+        }
 
-        console.log(this.$refs[el][0].classList.add(''));
+        const isSelected = this.selectedDays.indexOf(el) !== -1;
+
+        this.$refs[el][0].classList.toggle('datepicker-selected');
 
         if (isSelected) {
-          
+          this.selectedDays.splice(el, 1);
+        } else {
+          this.selectedDays.push(el);
         }
+      },
+      isSelected(index) {
+        if (this.array[index] !== undefined) {
+          const el = this.array[index].toString();
+          return this.selectedDays.indexOf(el) !== -1;
+        }
+
+        return false;
       },
     },
   };

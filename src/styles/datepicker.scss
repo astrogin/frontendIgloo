@@ -1,7 +1,6 @@
 .datepicker {
   width: 100%;
   text-align: center;
-  border-spacing: 20px;
 
   &-title {
     font-weight: bold;
@@ -39,5 +38,10 @@
     border: $text-purple-color;
     border-radius: 50%;
     background-color: $text-purple-color;
+    color: white;
   }
+}
+
+.datepicker th {
+  padding: 10px;
 }
