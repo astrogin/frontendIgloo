@@ -59,6 +59,47 @@ $gray: #a7a7a7;
       font-size: 1rem;
     }
   }
+
+  &-guests {
+    &-title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    &-subtitle {
+      font-size: 0.9rem;
+      text-align: center;
+      color: #a0a0a0;
+    }
+  }
+
+  &-input-number {
+    padding-top: 10px;
+
+    .el-input-number__decrease {
+      border-radius: 0 !important;
+      border-width: 0px !important;
+    }
+
+    .el-input-number__increase {
+      border-radius: 0 !important;
+      border-width: 0px !important;
+    }
+
+    .el-input-number__decrease, .el-input-number__increase {
+      background-color: white !important;
+      font-size: 2rem;
+      color: $text-purple-color;
+    }
+
+    .el-input__inner {
+      font-size: 2rem;
+    }
+
+    .el-input > input {
+      border-width: 0px;
+    }
+  }
 }
 
 .el-slider__bar {

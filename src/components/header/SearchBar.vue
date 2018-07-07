@@ -39,8 +39,30 @@
           </el-col>
         </el-row>
       </base-filter>
-      <base-filter width="100" text="Guests">
-        <div>hello</div>
+      <base-filter width="530" text="Guests">
+        <el-row :gutter="10">
+          <el-col :span="8">
+            <div class="searchbar-guests-title">Adults</div>
+            <div class="searchbar-guests-subtitle">Over 12</div>
+            <div class="searchbar-input-number">
+              <el-input-number v-model="guests.adults" :min="0" />
+            </div>
+          </el-col>
+          <el-col :span="8">
+            <div class="searchbar-guests-title">Children</div>
+            <div class="searchbar-guests-subtitle">Ages 2 - 12</div>
+            <div class="searchbar-input-number">
+              <el-input-number v-model="guests.children" :min="0" />
+            </div>
+          </el-col>
+          <el-col :span="8">
+            <div class="searchbar-guests-title">Infants</div>
+            <div class="searchbar-guests-subtitle">Under 12</div>
+            <div class="searchbar-input-number">
+              <el-input-number v-model="guests.infants" :min="0" />
+            </div>
+          </el-col>
+        </el-row>
       </base-filter>
       <base-filter width="100" text="Price">
         <div>hello</div>
@@ -77,6 +99,11 @@
         searchInput: '',
         date: [],
         timeRange: [0, 6],
+        guests: {
+          adults: 0,
+          children: 0,
+          infants: 0,
+        },
       };
     },
     computed: {
