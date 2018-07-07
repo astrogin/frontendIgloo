@@ -23,13 +23,19 @@
               v-model="timeRange"
               :show-tooltip="false"
               :step="1"
-              :min="1"
-              :max="24"
+              :min="-12"
+              :max="12"
               range/>
           </el-col>
           <el-col :span="8" class="searchbar-time">
             {{firstTime}} - {{secondTime}}
             <div class="searchbar-time-hours">{{hours}} hours</div>
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col class="searchbar-date-right">
+            <purple-text-button>Clear</purple-text-button>
+            <colorful-button>Apply</colorful-button>
           </el-col>
         </el-row>
       </base-filter>
@@ -55,18 +61,22 @@
 <script>
   import BaseFilter from './BaseFilter';
   import DatePicker from '@/components/DatePicker.vue';
+  import ColorfulButton from '@/components/ColorfulButton.vue';
+  import PurpleTextButton from '@/components/PurpleTextButton.vue';
 
   export default {
     components: {
       BaseFilter,
       DatePicker,
+      ColorfulButton,
+      PurpleTextButton,
     },
     data() {
       return {
         nowDate: new Date().setHours(-24, 0, 0, 0),
         searchInput: '',
         date: [],
-        timeRange: [1, 24],
+        timeRange: [0, 6],
       };
     },
     computed: {
@@ -74,9 +84,15 @@
         let time = this.timeRange[0];
         let postfix = 'AM';
 
-        if (time > 12) {
-          time = time - 12;
+        if (time === -12) {
+          time = 12;
           postfix = 'AM';
+        } else if (time < 0) {
+          time += 12;
+          postfix = 'PM';
+        } else if (time === 0) {
+          time = 12;
+          postfix = 'PM';
         }
 
         return time + ' ' + postfix;
@@ -91,7 +107,7 @@
       },
 
       hours() {
-        return this.timeRange[1] - this.timeRange[0] + 1;
+        return this.timeRange[1] - this.timeRange[0];
       },
     },
   };
