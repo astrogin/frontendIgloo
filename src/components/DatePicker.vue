@@ -51,7 +51,7 @@
           :array="nextMonthArray"
           :selected-days="selectedDates"
           :week-titles="weekTitles"
-          :uniq-key="nextMonthDate.getMonth() + ''+ nextMonthDate.getFullYear()"/>
+          :uniq-key="nextMonthDate.getMonth()+''+ nextMonthDate.getFullYear()"/>
       </el-col>
     </el-row>
   </div>

@@ -14,6 +14,24 @@
     <el-col :span="18">
       <base-filter width="620" text="Date &amp; Time">
         <date-picker/>
+        <el-row>
+          <el-col><div class="searchbar-date-title">Time</div></el-col>
+        </el-row>
+        <el-row class="searchbar-timeline">
+          <el-col :span="16">
+            <el-slider
+              v-model="timeRange"
+              :show-tooltip="false"
+              :step="1"
+              :min="1"
+              :max="24"
+              range/>
+          </el-col>
+          <el-col :span="8" class="searchbar-time">
+            {{firstTime}} - {{secondTime}}
+            <div class="searchbar-time-hours">{{hours}} hours</div>
+          </el-col>
+        </el-row>
       </base-filter>
       <base-filter width="100" text="Guests">
         <div>hello</div>
@@ -48,7 +66,33 @@
         nowDate: new Date().setHours(-24, 0, 0, 0),
         searchInput: '',
         date: [],
+        timeRange: [1, 24],
       };
+    },
+    computed: {
+      firstTime() {
+        let time = this.timeRange[0];
+        let postfix = 'AM';
+
+        if (time > 12) {
+          time = time - 12;
+          postfix = 'AM';
+        }
+
+        return time + ' ' + postfix;
+      },
+
+      secondTime() {
+        if (this.timeRange[1] > 12) {
+          return (this.timeRange[1] - 12) + ' PM';
+        } else {
+          return this.timeRange[1] + ' AM';
+        }
+      },
+
+      hours() {
+        return this.timeRange[1] - this.timeRange[0] + 1;
+      },
     },
   };
 </script>
