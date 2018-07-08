@@ -1,6 +1,6 @@
 <template>
   <header-popover :state.sync="isOpened" :active="isActive" width="450">
-    <div>
+    <div style="margin-left: 13px">
       <span class="popover-item text-purple">All</span>
       <span class="popover-item">GoAround message</span>
       <span class="popover-item">Request ( 15 )</span>
@@ -50,13 +50,11 @@
   import NotificationSystem from './notifications/System.vue';
   import NotificationRequest from './notifications/Request.vue';
 
-
   import {mapGetters} from 'vuex';
 
   export default {
     components: {
       HeaderPopover,
-      Notification,
       PurpleButton,
       NotificationReview,
       NotificationSystem,
