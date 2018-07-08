@@ -1,16 +1,21 @@
 <template>
   <div>
-    <p>Some homepage 1</p>
+    <search-bar />
+    <p>Some homepage</p>
     <el-button @click.native="openSignUp">Sign Up</el-button>
     <el-button @click.native="openSignIn">Sign In</el-button>
   </div>
 </template>
 
 <script>
-
   import {mapActions} from 'vuex';
 
+  import SearchBar from '@/components/header/SearchBar.vue';
+
   export default {
+    components: {
+      SearchBar,
+    },
     methods: {
       ...mapActions([
         'openSignIn',

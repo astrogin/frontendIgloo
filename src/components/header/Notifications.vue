@@ -43,7 +43,7 @@
 </template>
 
 <script>
-  import Popover from './Popover';
+  import HeaderPopover from './Popover';
   import PurpleButton from '@/components/PurpleButton.vue';
 
   import NotificationReview from './notifications/Review.vue';
@@ -55,7 +55,7 @@
 
   export default {
     components: {
-      'header-popover': Popover,
+      HeaderPopover,
       Notification,
       PurpleButton,
       NotificationReview,

@@ -20,11 +20,11 @@
 </template>
 
 <script>
-  import Popover from './Popover';
+  import HeaderPopover from './Popover';
 
   export default {
     components: {
-      'header-popover': Popover,
+      HeaderPopover,
     },
     data() {
       return {
