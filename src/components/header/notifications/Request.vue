@@ -9,7 +9,6 @@
       <div class="text-purple text-bold">{{to}}</div>
       <div class="text-purple bad-margin">{{on}}</div>
     </template>
-    
     <div class="bad-margin notification-buttons">
       <purple-button>Approve</purple-button>
       <span class="notification-text notification-button">Reject</span>
@@ -19,7 +18,7 @@
 
 <script>
   import Notification from './Notification.vue';
-  import PurpleButton from '@/components/PurpleButton.vue';
+  import PurpleButton from '@/ui-kit/buttons/ButtonPurple';
 
   export default {
     components: {

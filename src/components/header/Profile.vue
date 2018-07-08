@@ -20,7 +20,7 @@
 </template>
 
 <script>
-  import HeaderPopover from './Popover';
+  import HeaderPopover from '@/ui-kit/Popover';
 
   export default {
     components: {

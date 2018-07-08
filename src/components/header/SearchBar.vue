@@ -147,10 +147,11 @@
 </template>
 
 <script>
-  import BaseFilter from './BaseFilter';
+  import ColorfulButton from '@/ui-kit/buttons/ButtonColorful';
+  import PurpleTextButton from '@/ui-kit/buttons/ButtonPurpleText';
+
   import DatePicker from '@/components/DatePicker.vue';
-  import ColorfulButton from '@/components/ColorfulButton.vue';
-  import PurpleTextButton from '@/components/PurpleTextButton.vue';
+  import BaseFilter from './BaseFilter';
 
   export default {
     components: {
@@ -161,9 +162,7 @@
     },
     data() {
       return {
-        nowDate: new Date().setHours(-24, 0, 0, 0),
         searchInput: '',
-        date: [],
         timeRange: [0, 6],
         price: [500, 16850],
         categories: ['Travel', 'Relax and beauty'],

@@ -36,13 +36,13 @@
 </template>
 
 <script>
-  import MenuDropdown from '@/components/MenuDropdown.vue';
-  import ColorfulButton from '@/components/ColorfulButton.vue';
-  import HeaderProfile from '@/components/header/Profile.vue';
+  import MenuDropdown from '@/ui-kit/MenuDropdown';
+  import ColorfulButton from '@/ui-kit/buttons/ButtonColorful';
+
+  import HeaderProfile from '@/components/header/Profile';
   import HeaderComments from '@/components/header/Comments';
   import HeaderNotifications from '@/components/header/Notifications';
-  import SearchBar from '@/components/header/SearchBar.vue';
-
+  import SearchBar from '@/components/header/SearchBar';
 
   export default {
     components: {

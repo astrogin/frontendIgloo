@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import Popover from './Popover';
+  import Popover from '@/ui-kit/Popover';
 
   export default {
     components: {

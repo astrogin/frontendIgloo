@@ -3,10 +3,10 @@ import {
   SET_MODAL_STATE,
   SET_MODAL_COMPONENT_FOOTER} from '@/store/mutation_types';
 
-import SignIn from '@/components/modals/SignIn.vue';
-import SignInFooter from '@/components/modals/SignInFooter.vue';
-import SignUp from '@/components/modals/SignUp.vue';
-import SignUpFooter from '@/components/modals/SignUpFooter.vue';
+import SignIn from '@/ui-kit/modals/SignIn.vue';
+import SignInFooter from '@/ui-kit/modals/SignInFooter.vue';
+import SignUp from '@/ui-kit/modals/SignUp.vue';
+import SignUpFooter from '@/ui-kit/modals/SignUpFooter.vue';
 
 const state = {
   modalState: false,

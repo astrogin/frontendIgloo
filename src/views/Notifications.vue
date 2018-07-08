@@ -83,10 +83,11 @@
 <script>
   import {mapGetters} from 'vuex';
 
+  import ColorfulButton from '@/ui-kit/buttons/ButtonColorful';
+
   import NotificationReview from '@/components/header/notifications/Review.vue';
   import NotificationSystem from '@/components/header/notifications/System.vue';
   import NotificationRequest from '@/components/header/notifications/Request';
-  import ColorfulButton from '@/components/ColorfulButton.vue';
 
   export default {
     components: {

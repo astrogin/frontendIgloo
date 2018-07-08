@@ -25,11 +25,12 @@
 </template>
 
 <script>
-  import HeaderPopover from './Popover';
-  import Comment from './Comment';
-  import PurpleButton from '@/components/PurpleButton.vue';
-
   import {mapGetters} from 'vuex';
+
+  import HeaderPopover from '@/ui-kit/Popover';
+  import PurpleButton from '@/ui-kit/buttons/ButtonPurple';
+
+  import Comment from './Comment';
 
   export default {
     components: {

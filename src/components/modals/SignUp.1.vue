@@ -19,9 +19,9 @@
 </template>
 
 <script>
-  import SignUpFacebook from '@/components/loginCards/SignUpFacebook.vue';
-  import SignUpGoogle from '@/components/loginCards/SignUpGoogle.vue';
-  import SignUpEmail from '@/components/loginCards/SignUpEmail.vue';
+  import SignUpFacebook from '@/components/cards/login/SignUpFacebook';
+  import SignUpGoogle from '@/components/cards/login/SignUpGoogle';
+  import SignUpEmail from '@/components/cards/login/SignUpEmail';
 
   export default {
     components: {
