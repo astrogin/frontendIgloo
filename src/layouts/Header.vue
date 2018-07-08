@@ -2,7 +2,9 @@
   <div>
     <el-header class="header">
       <span class="header-title">
-        <span class="title-bold">go</span>around
+        <router-link to="/">
+          <span class="title-bold">go</span>around
+        </router-link>
       </span>
 
       <span class="header-right">

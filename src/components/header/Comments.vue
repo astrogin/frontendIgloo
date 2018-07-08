@@ -1,5 +1,5 @@
 <template>
-  <header-popover width="450">
+  <header-popover :state.sync="isOpened" :active="isActive" width="450">
     <div>
       <span class="popover-item text-purple">Recent</span>
       <span class="popover-item">Accepted experience</span>
@@ -12,9 +12,9 @@
       :text="comment.text"
       :date="comment.date"/>
 
-    <div class="comments-button">
-      <purple-button>See more</purple-button>
-    </div>
+    <router-link to="/messages" tag="div" class="comments-button">
+      <purple-button @click.native="isOpened = false">See more</purple-button>
+    </router-link>
 
     <span slot="color" class="header-item item-text">
       <el-badge is-dot class="dot-badge">
@@ -37,10 +37,18 @@
       Comment,
       PurpleButton,
     },
+    data() {
+      return {
+        isOpened: false,
+      };
+    },
     computed: {
       ...mapGetters([
         'comments',
       ]),
+      isActive() {
+        return this.isOpened || this.$route.path === '/messages';
+      },
     },
   };
 </script>

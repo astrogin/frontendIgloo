@@ -49,3 +49,8 @@ body {
 .clearfix {
   overflow: auto;
 }
+
+// Disable a-tag underline
+a:link, a:visited {
+  text-decoration: none;
+}
