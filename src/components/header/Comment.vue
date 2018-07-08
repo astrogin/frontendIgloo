@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import {truncate} from '../../helpers/filters';
+  import {truncate} from '@/helpers/filters';
 
   export default {
     filters: {

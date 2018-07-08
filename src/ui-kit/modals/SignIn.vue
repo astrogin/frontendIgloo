@@ -53,9 +53,10 @@
 </template>
 
 <script>
-  import SignInFacebook from '@/components/loginCards/SignInFacebook.vue';
-  import SignInGoogle from '@/components/loginCards/SignInGoogle.vue';
-  import ColorfulButton from '@/components/ColorfulButton.vue';
+  import ColorfulButton from '@/ui-kit/buttons/ButtonColorful';
+
+  import SignInFacebook from '@/components/cards/login/SignInFacebook';
+  import SignInGoogle from '@/components/cards/login//SignInGoogle';
 
   export default {
     components: {

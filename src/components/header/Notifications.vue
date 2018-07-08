@@ -43,14 +43,14 @@
 </template>
 
 <script>
-  import HeaderPopover from './Popover';
-  import PurpleButton from '@/components/PurpleButton.vue';
+  import {mapGetters} from 'vuex';
+
+  import HeaderPopover from '@/ui-kit/Popover';
+  import PurpleButton from '@/ui-kit/buttons/ButtonPurple';
 
   import NotificationReview from './notifications/Review.vue';
   import NotificationSystem from './notifications/System.vue';
   import NotificationRequest from './notifications/Request.vue';
-
-  import {mapGetters} from 'vuex';
 
   export default {
     components: {

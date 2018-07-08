@@ -112,8 +112,7 @@
 </template>
 
 <script>
-
-  import ColorfulButton from '@/components/ColorfulButton.vue';
+  import ColorfulButton from '@/ui-kit/buttons/ButtonColorful';
 
   export default {
     components: {
