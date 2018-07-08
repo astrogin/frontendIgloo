@@ -5,13 +5,33 @@
         <div class="notif-title">Notifications</div>
         <el-row>
           <div class="notif-bar">
-            <span class="active">All</span>
-            <span>GoAround message</span>
-            <span>Request ( 15 )</span>
-            <span>Review</span>
+            <span
+              :class="{'active': filter === ''}"
+              class="pointer"
+              @click="filter = ''">
+              All
+            </span>
+            <span
+              :class="{'active': filter === 'system'}"
+              class="pointer"
+              @click="filter = 'system'">
+              GoAround message
+            </span>
+            <span
+              :class="{'active': filter === 'request'}"
+              class="pointer"
+              @click="filter = 'request'">
+              Request ( 15 )
+            </span>
+            <span
+              :class="{'active': filter === 'review'}"
+              class="pointer"
+              @click="filter = 'review'">
+              Review
+            </span>
           </div>
         </el-row>
-        <el-row v-for="n in notifications" :key="n.id">
+        <el-row v-for="n in filteredNotifications" :key="n.id">
           <div class="notif-line">
             <!-- <img src="http://via.placeholder.com/60/86bed8/86bed8" class="notification-image">
             <span class="notification-body">
@@ -69,8 +89,22 @@
       NotificationSystem,
       NotificationRequest,
     },
+    data() {
+      return {
+        filter: '',
+      };
+    },
     computed: {
       ...mapGetters(['notifications']),
+      filteredNotifications() {
+        if (this.filter === '') {
+          return this.notifications;
+        }
+
+        return this.notifications.filter((notif) => {
+          return notif.type === this.filter;
+        });
+      },
     },
   };
 </script>
