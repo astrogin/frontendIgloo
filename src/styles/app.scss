@@ -6,6 +6,7 @@
 @import './logincard.scss';
 @import './notifications.scss';
 @import './datepicker.scss';
+@import './messages.scss';
 
 body {
   margin: 0px;
@@ -51,4 +52,12 @@ a:link, a:visited {
 
 .right {
   float: right;
+}
+
+.purple-check {
+  background-color: $text-purple-color;
+  color: white;
+  padding: 5px 15px;
+  font-size: 0.95rem;
+  border-radius: 20px;
 }

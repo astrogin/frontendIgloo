@@ -22,7 +22,7 @@
   &-title {
     text-align: center;
     font-size: 3em;
-    color: $gray_text;
+    color: $gray-text;
   }
 
   &-title-row {
@@ -32,11 +32,11 @@
   &-title-left {
     text-align: left;
     font-size: 2.5em;
-    color: $gray_text;
+    color: $gray-text;
   }
 
   &-title-small {
-    color: $gray_text;
+    color: $gray-text;
     font-weight: bold;
     font-size: 1.1em;
     position: absolute;
@@ -48,7 +48,7 @@
     text-align: center;
     font-size: 2.3em;
     margin: 25px 0;
-    color: $gray_text;
+    color: $gray-text;
   }
 
   &-footer {
@@ -57,7 +57,7 @@
     &-text {
       font-size: 1.5em;
       font-weight: bold;
-      color: $gray_text;
+      color: $gray-text;
     }
   }
 
@@ -79,14 +79,14 @@
       margin-top: 35px;
 
       &-title {
-        color: $gray_text;
+        color: $gray-text;
         font-size: 1.4em;
         font-weight: bold;
       }
 
       &-subtitle {
         margin: 5px 0;
-        color: $gray_text;
+        color: $gray-text;
       }
     }
   }
@@ -103,6 +103,6 @@
 
 .el-checkbox__label {
   font-size: 1.2em !important;
-  color: $gray_text;
+  color: $gray-text;
   font-weight: bold;
 }
