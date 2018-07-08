@@ -97,6 +97,8 @@
   }
 
   &-bar {
+    line-height: 30px;
+
     > span {
       margin-right: 13px;
       font-size: 1.14em;
@@ -111,5 +113,11 @@
   &-line {
     padding: 15px 0;
     border-bottom: 1px solid #f0eff0;
+    margin-bottom: 40px;
+  }
+
+  &-button {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
   }
 }

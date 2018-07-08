@@ -4,7 +4,7 @@
       <el-col :span="16" class="notif">
         <div class="notif-title">Notifications</div>
         <el-row>
-          <div class="notif-bar">
+          <div class="notif-bar clearfix">
             <span
               :class="{'active': filter === ''}"
               class="pointer"
@@ -29,6 +29,10 @@
               @click="filter = 'review'">
               Review
             </span>
+            <colorful-button
+              v-if="filter === 'request'" class="notif-button right">
+              Approve all request
+            </colorful-button>
           </div>
         </el-row>
         <el-row v-for="n in filteredNotifications" :key="n.id">
@@ -66,6 +70,13 @@
               full/>
           </div>
         </el-row>
+        <el-row v-if="filter === 'request'">
+          <el-col>
+            <colorful-button class="notif-button right">
+              Approve all request
+            </colorful-button>
+          </el-col>
+        </el-row>
         <el-row type="flex" justify="center">
           <el-col class="notification-pagination">
             <el-pagination :total="240" layout="prev, pager, next" background/>
@@ -82,12 +93,14 @@
   import NotificationReview from '@/components/header/notifications/Review.vue';
   import NotificationSystem from '@/components/header/notifications/System.vue';
   import NotificationRequest from '@/components/header/notifications/Request';
+  import ColorfulButton from '@/components/ColorfulButton.vue';
 
   export default {
     components: {
       NotificationReview,
       NotificationSystem,
       NotificationRequest,
+      ColorfulButton,
     },
     data() {
       return {
