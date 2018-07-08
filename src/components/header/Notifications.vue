@@ -1,5 +1,5 @@
 <template>
-  <header-popover width="450">
+  <header-popover :state.sync="isOpened" :active="isActive" width="450">
     <div>
       <span class="popover-item text-purple">All</span>
       <span class="popover-item">GoAround message</span>
@@ -30,9 +30,9 @@
         :key="notif.id"/>
     </template>
 
-    <div class="comments-button">
-      <purple-button>See more</purple-button>
-    </div>
+    <router-link to="/notifications" tag="div" class="comments-button">
+      <purple-button @click.native="isOpened = false">See more</purple-button>
+    </router-link>
 
     <span slot="color" class="header-item item-text">
       <el-badge is-dot class="dot-badge">
@@ -62,6 +62,11 @@
       NotificationSystem,
       NotificationRequest,
     },
+    data() {
+      return {
+        isOpened: false,
+      };
+    },
     computed: {
       ...mapGetters([
         'notifications',
@@ -71,6 +76,9 @@
         const l = n.length;
 
         return n.slice(0, l >= 5 ? 5 : l);
+      },
+      isActive() {
+        return this.isOpened || this.$route.path === '/notifications';
       },
     },
   };
