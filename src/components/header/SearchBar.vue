@@ -97,7 +97,8 @@
         </el-row>
       </base-filter>
       <base-filter width="455" text="Category">
-        <el-checkbox-group v-model="categories" class="searchbar-input-checkbox">
+        <el-checkbox-group
+          v-model="categories" class="searchbar-input-checkbox">
           <el-row>
             <el-col :span="12"><el-checkbox label="Travel"/></el-col>
             <el-col :span="12"><el-checkbox label="Eat"/></el-col>
@@ -117,8 +118,26 @@
           </el-col>
         </el-row>
       </base-filter>
-      <base-filter width="100" text="Instant Booking">
-        <div>hello</div>
+      <base-filter width="420" text="Instant Booking">
+        <el-row class="searchbar-book">
+          <el-col :span="6" class="searchbar-book-switch">
+            <el-switch v-model="instantBook" active-color="#7929a6"/>
+          </el-col>
+          <el-col :span="18">
+            <div class="searchbar-book-title">Instant Book</div>
+            <div class="searchbar-book-subtitle">
+              Listings you can book without waiting for host approval
+            </div>
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col class="searchbar-right">
+            <el-button :class="{
+              'searchbar-book-button': !instantBook,
+              'searchbar-book-button-active': instantBook,
+            }" round>Apply</el-button>
+          </el-col>
+        </el-row>
       </base-filter>
       <base-filter :arrow="false" width="100" text="More Filters">
         <div>hello</div>
@@ -148,6 +167,7 @@
         timeRange: [0, 6],
         price: [500, 16850],
         categories: ['Travel', 'Relax and beauty'],
+        instantBook: false,
         guests: {
           adults: 0,
           children: 0,

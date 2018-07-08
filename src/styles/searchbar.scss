@@ -1,6 +1,7 @@
 $light_gray: #f6f6f6;
 $dark_gray: #a5a5a5;
 $gray: #a7a7a7;
+$color-subtitle: #9b9b9b;
 
 .searchbar {
   height: 55px;
@@ -83,11 +84,41 @@ $gray: #a7a7a7;
     &-subtitle {
       font-size:  0.8rem;
       padding-left: 20px;
-      color: #9b9b9b;
+      color: $color-subtitle;
     }
 
     &-input {
       padding: 20px 20px 0 20px;
+    }
+  }
+
+  &-book {
+    padding-top: 15px;
+
+    &-title {
+      font-size: 2rem;
+    }
+
+    &-subtitle {
+      color: $color-subtitle;
+    }
+
+    &-switch {
+      padding: 10px 0 0 20px;
+    }
+
+    &-button {
+      color: white !important;
+      background: #d91fbf !important;
+      background: -moz-linear-gradient(left, #d91fbf 0%, #ca65d5 100%) !important;
+      background: -webkit-linear-gradient(left, #d91fbf 0%,#ca65d5 100%) !important;
+      background: linear-gradient(to right, #d91fbf 0%,#ca65d5 100%) !important;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d91fbf', endColorstr='#ca65d5',GradientType=1 ) !important;
+
+      &-active {
+        color: white !important;
+        background-color: #4cddbc !important;
+      }
     }
   }
 
