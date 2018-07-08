@@ -22,7 +22,7 @@ body {
 }
 
 .text-purple {
-  color: $text-purple-color;
+  color: $color-purple;
 }
 
 .text-bold {
@@ -34,7 +34,7 @@ body {
 }
 
 .button-purple {
-  color: $text-purple-color !important;
+  color: $color-purple !important;
 }
 
 .button-purple:hover {
@@ -55,7 +55,7 @@ a:link, a:visited {
 }
 
 .purple-check {
-  background-color: $text-purple-color;
+  background-color: $color-purple;
   color: white;
   padding: 5px 15px;
   font-size: 0.95rem;

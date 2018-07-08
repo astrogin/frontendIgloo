@@ -35,9 +35,9 @@
   }
 
   &-selected {
-    border: $text-purple-color;
+    border: $color-purple;
     border-radius: 50%;
-    background-color: $text-purple-color;
+    background-color: $color-purple;
     color: white;
   }
 }
