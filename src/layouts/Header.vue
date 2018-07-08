@@ -1,34 +1,36 @@
 <template>
-  <el-header class="header">
-    <span class="header-title">
-      <span class="title-bold">go</span>around
-    </span>
+  <div>
+    <el-header class="header">
+      <span class="header-title">
+        <span class="title-bold">go</span>around
+      </span>
 
-    <span class="header-right">
-      <colorful-button class="header-item item-button">
-        Become a Host
-      </colorful-button>
+      <span class="header-right">
+        <colorful-button class="header-item item-button">
+          Become a Host
+        </colorful-button>
 
-      <menu-dropdown
-        :elements="currencyElements"
-        class="header-item item-text"
-        @changed="changeCurrency"/>
+        <menu-dropdown
+          :elements="currencyElements"
+          class="header-item item-text"
+          @changed="changeCurrency"/>
 
-      <menu-dropdown
-        :elements="languagesElements"
-        class="header-item item-text"
-        @changed="changeLanguage"/>
+        <menu-dropdown
+          :elements="languagesElements"
+          class="header-item item-text"
+          @changed="changeLanguage"/>
 
-      <span class="header-divider"/>
-
-      <a href="#" class="header-item item-text">My Booking</a>
-      <a href="#" class="header-item item-text">Saved</a>
-      <header-comments/>
-      <header-notifications/>
-      <a href="#" class="header-item item-text">Help</a>
-      <header-profile/>
-    </span>
-  </el-header>
+        <span class="header-divider"/>
+        <a href="#" class="header-item item-text">My Booking</a>
+        <a href="#" class="header-item item-text">Saved</a>
+        <header-comments/>
+        <header-notifications/>
+        <a href="#" class="header-item item-text">Help</a>
+        <header-profile/>
+      </span>
+    </el-header>
+    <search-bar />
+  </div>
 </template>
 
 <script>
@@ -37,6 +39,8 @@
   import HeaderProfile from '@/components/header/Profile.vue';
   import HeaderComments from '@/components/header/Comments';
   import HeaderNotifications from '@/components/header/Notifications';
+  import SearchBar from '@/components/header/SearchBar.vue';
+
 
   export default {
     components: {
@@ -45,6 +49,7 @@
       HeaderProfile,
       HeaderComments,
       HeaderNotifications,
+      SearchBar,
     },
 
     data() {

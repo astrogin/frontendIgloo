@@ -31,7 +31,9 @@
     </template>
 
     <div class="comments-button">
-      <purple-button>See more</purple-button>
+      <purple-button>
+        <router-link to="/notifications">See more</router-link>
+      </purple-button>
     </div>
 
     <span slot="color" class="header-item item-text">
