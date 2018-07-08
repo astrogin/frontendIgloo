@@ -37,12 +37,12 @@ $gray: #a7a7a7;
       padding-left: 10px;
       font-size: 1.2rem;
     }
+  }
 
-    &-right {
-      text-align: right;
-      margin: 30px;
-      margin-left: 0;
-    }
+  &-right {
+    text-align: right;
+    margin: 30px;
+    margin-left: 0;
   }
 
   &-timeline {
@@ -73,31 +73,86 @@ $gray: #a7a7a7;
     }
   }
 
-  &-input-number {
-    padding-top: 10px;
-
-    .el-input-number__decrease {
-      border-radius: 0 !important;
-      border-width: 0px !important;
+  &-price {
+    &-title {
+      font-weight:  bold;
+      font-size:  1.5rem;
+      padding:  20px 0 0 20px;
     }
 
-    .el-input-number__increase {
-      border-radius: 0 !important;
-      border-width: 0px !important;
+    &-subtitle {
+      font-size:  0.8rem;
+      padding-left: 20px;
+      color: #9b9b9b;
     }
 
-    .el-input-number__decrease, .el-input-number__increase {
-      background-color: white !important;
-      font-size: 2rem;
-      color: $text-purple-color;
+    &-input {
+      padding: 20px 20px 0 20px;
     }
+  }
 
-    .el-input__inner {
-      font-size: 2rem;
+  &-button-purple {
+    color: white !important;
+    background-color: #9013fe !important;
+  }
+
+  &-input {
+    &-number {
+      padding-top: 10px;
+  
+      .el-input-number__decrease {
+        border-radius: 0 !important;
+        border-width: 0px !important;
+      }
+  
+      .el-input-number__increase {
+        border-radius: 0 !important;
+        border-width: 0px !important;
+      }
+  
+      .el-input-number__decrease, .el-input-number__increase {
+        background-color: white !important;
+        font-size: 2rem;
+        color: $text-purple-color;
+      }
+  
+      .el-input__inner {
+        font-size: 2rem;
+      }
+  
+      .el-input > input {
+        border-width: 0px;
+      }
     }
+  
+    &-checkbox {
+      .el-checkbox__input.is-checked+.el-checkbox__label {
+        color: #4a4a4a;
+      }
 
-    .el-input > input {
-      border-width: 0px;
+      .el-checkbox__label {
+        color: #4a4a4a;
+      }
+
+      .el-checkbox__inner {
+        border-radius: 50%;
+        background-color: #ebebeb;
+        width: 28px;
+        height: 28px;
+      }
+
+      .el-checkbox__inner::after {
+        height: 13px;
+        left: 8px;
+        top: 3px;
+        width: 8px;
+      }
+
+      .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        background-color: $text-purple-color;
+        border-color: $text-purple-color;
+        border-radius: 50%;
+      }
     }
   }
 }

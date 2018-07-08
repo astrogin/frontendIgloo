@@ -33,7 +33,7 @@
           </el-col>
         </el-row>
         <el-row>
-          <el-col class="searchbar-date-right">
+          <el-col class="searchbar-right">
             <purple-text-button>Clear</purple-text-button>
             <colorful-button>Apply</colorful-button>
           </el-col>
@@ -63,12 +63,59 @@
             </div>
           </el-col>
         </el-row>
+        <el-row>
+          <el-col class="searchbar-right">
+            <el-button type="danger" round>Apply</el-button>
+          </el-col>
+        </el-row>
       </base-filter>
-      <base-filter width="100" text="Price">
-        <div>hello</div>
+      <base-filter width="510" text="Price">
+        <el-row>
+          <el-col class="searchbar-price-title">
+            THB {{price[0]}} - {{price[1]}}
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col class="searchbar-price-subtitle">
+            The average nighty price is THB 5983
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col class="searchbar-price-input">
+            <el-slider
+              v-model="price"
+              :show-tooltip="false"
+              :min="0"
+              :max="40000"
+              range/>
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col class="searchbar-right">
+            <el-button type="warning" round>Apply</el-button>
+          </el-col>
+        </el-row>
       </base-filter>
-      <base-filter width="100" text="Category">
-        <div>hello</div>
+      <base-filter width="455" text="Category">
+        <el-checkbox-group v-model="categories" class="searchbar-input-checkbox">
+          <el-row>
+            <el-col :span="12"><el-checkbox label="Travel"/></el-col>
+            <el-col :span="12"><el-checkbox label="Eat"/></el-col>
+          </el-row>
+          <el-row>
+            <el-col :span="12"> <el-checkbox label="Nightlife"/></el-col>
+            <el-col :span="12"><el-checkbox label="Active"/></el-col>
+          </el-row>
+          <el-row>
+            <el-col :span="12"><el-checkbox label="Relax and beauty"/></el-col>
+            <el-col :span="12"><el-checkbox label="Photography"/></el-col>
+          </el-row>
+        </el-checkbox-group>
+        <el-row>
+          <el-col class="searchbar-right">
+            <el-button class="searchbar-button-purple" round>Apply</el-button>
+          </el-col>
+        </el-row>
       </base-filter>
       <base-filter width="100" text="Instant Booking">
         <div>hello</div>
@@ -99,6 +146,8 @@
         searchInput: '',
         date: [],
         timeRange: [0, 6],
+        price: [500, 16850],
+        categories: ['Travel', 'Relax and beauty'],
         guests: {
           adults: 0,
           children: 0,
