@@ -35,40 +35,33 @@
             </colorful-button>
           </div>
         </el-row>
-        <el-row v-for="n in filteredNotifications" :key="n.id">
-          <div class="notif-line">
-            <!-- <img src="http://via.placeholder.com/60/86bed8/86bed8" class="notification-image">
-            <span class="notification-body">
-              <div class="clearfix">
-                <template v-if="n.type == 'review'">
-                  <span class="notification-title">{{n.from}}</span>
-                  <span class="notification-date">{{n.date}}</span>
-                </template>
-              </div>
-            </span> -->
-            <notification-review
-              v-if="n.type === 'review'"
-              :from="n.from"
-              :to="n.to"
-              :date="n.date"
-              :positive="n.positive"
-              :key="n.id"/>
-            <notification-system
-              v-if="n.type === 'system'"
-              :title="n.title"
-              :message="n.message"
-              :to="n.to"
-              :date="n.date"
-              :key="n.id"/>
-            <notification-request
-              v-if="n.type === 'request'"
-              :from="n.from"
-              :to="n.to"
-              :on="n.on"
-              :date="n.date"
-              :key="n.id"
-              full/>
-          </div>
+        <el-row class="notif-lines">
+          <el-row v-for="n in filteredNotifications" :key="n.id">
+            <div class="notif-line">
+              <notification-review
+                v-if="n.type === 'review'"
+                :from="n.from"
+                :to="n.to"
+                :date="n.date"
+                :positive="n.positive"
+                :key="n.id"/>
+              <notification-system
+                v-if="n.type === 'system'"
+                :title="n.title"
+                :message="n.message"
+                :to="n.to"
+                :date="n.date"
+                :key="n.id"/>
+              <notification-request
+                v-if="n.type === 'request'"
+                :from="n.from"
+                :to="n.to"
+                :on="n.on"
+                :date="n.date"
+                :key="n.id"
+                full/>
+            </div>
+          </el-row>
         </el-row>
         <el-row v-if="filter === 'request'">
           <el-col>
