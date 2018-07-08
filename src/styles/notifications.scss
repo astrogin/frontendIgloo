@@ -51,6 +51,27 @@
     .el-pagination.is-background .btn-prev,
     .el-pagination.is-background .el-pager li {
       border-radius: 50% !important;
+      background-color: #cdcccd;
+      color: white;
+    }
+
+    .el-pagination button, .el-pagination span:not([class*=suffix]) {
+      height: 40px;
+      width: 40px;
+      font-size: 22px;
+      line-height: 40px;
+    }
+
+    .el-pagination .btn-next .el-icon, .el-pagination .btn-prev .el-icon {
+      font-size: 20px;
+    }
+
+    .el-pagination.is-background .el-pager li:not(.disabled):hover {
+      color: $text-purple-color;
+    }
+
+    .el-pager .more::before {
+      line-height: 40px !important;
     }
 
     .el-pager li {
