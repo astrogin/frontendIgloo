@@ -30,4 +30,65 @@
   &-buttons {
     margin: 15px 0;
   }
+
+  &-positive {
+    color: #5faf06;
+  }
+
+  &-negative {
+    color: #ff7d8d;
+  }
+
+  &-neutral {
+    color: #ffed8d
+  }
+
+  &-pagination {
+    margin: 20px 0 60px 0;
+    text-align: center;
+
+    .el-pagination.is-background .btn-next,
+    .el-pagination.is-background .btn-prev,
+    .el-pagination.is-background .el-pager li {
+      border-radius: 50% !important;
+    }
+
+    .el-pager li {
+      height: 40px;
+      width: 40px;
+      font-size: 22px;
+      line-height: 40px;
+    }
+
+    .el-pagination.is-background .el-pager li:not(.disabled).active {
+      background-color: #7030a0;
+    }
+  }
+}
+
+// Notifications full page
+.notif {
+  padding-top: 50px;
+
+  &-title {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  &-bar {
+    > span {
+      margin-right: 13px;
+      font-size: 1.14em;
+      color: gray;
+    }
+
+    > span.active {
+      color: $text-purple-color;
+    }
+  }
+
+  &-line {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0eff0;
+  }
 }
