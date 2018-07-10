@@ -99,9 +99,9 @@
           <el-row>
             <el-form-item>
               <div class="dialog-form-right">
-                <cbutton class="dialog-form-button" @click="handleSubmit">
+                <button-cyan class="dialog-form-button" @click="handleSubmit">
                   Sign up
-                </cbutton>
+                </button-cyan>
               </div>
             </el-form-item>
           </el-row>
@@ -112,11 +112,11 @@
 </template>
 
 <script>
-  import ColorfulButton from '@/ui-kit/buttons/ButtonColorful';
+  import ButtonCyan from '@/ui-kit/buttons/ButtonCyan';
 
   export default {
     components: {
-      'cbutton': ColorfulButton,
+      ButtonCyan,
     },
     data() {
       return {
