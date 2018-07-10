@@ -26,10 +26,10 @@
       </el-row>
     </el-col>
     <el-col :span="14">
-      <el-row>
+      <el-row class="h100">
         <el-col class="chat clearfix">
           <div class="chat-header clearfix">
-            <img class="chat-image" src="http://placehold.it/100">
+            <img class="chat-image"  src="http://via.placeholder.com/100">
             <div>
               <span class="chat-title">Jessica Liu</span>
               <span class="right purple-check">
@@ -45,6 +45,11 @@
               <span class="chat-text">Joined in June 2014</span>
               <span class="right chat-subtitle">English, Thai</span>
             </div>
+          </div>
+
+          <div class="chat-textinput">
+            <input type="text" placeholder="Type your message here">
+            <button>Send</button>
           </div>
         </el-col>
       </el-row>

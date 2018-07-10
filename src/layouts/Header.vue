@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <el-row>
     <el-header class="header">
       <span class="header-title">
         <router-link to="/">
@@ -31,8 +31,7 @@
         <header-profile/>
       </span>
     </el-header>
-    <search-bar />
-  </div>
+  </el-row>
 </template>
 
 <script>
@@ -42,7 +41,6 @@
   import HeaderProfile from '@/components/header/Profile';
   import HeaderComments from '@/components/header/Comments';
   import HeaderNotifications from '@/components/header/Notifications';
-  import SearchBar from '@/components/header/SearchBar';
 
   export default {
     components: {
@@ -51,7 +49,6 @@
       HeaderProfile,
       HeaderComments,
       HeaderNotifications,
-      SearchBar,
     },
 
     data() {

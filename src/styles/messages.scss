@@ -1,6 +1,37 @@
 .chat {
   padding: 30px;
 
+  &-textinput {
+    position: absolute !important;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    padding: 5px;
+    border-radius: 22.5px;
+    border: 1px solid rgba(155, 155, 155, 0.5);
+
+    > input {
+      border: none;
+      font-size: 18px;
+      margin: 6px;
+      width: 85%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    > button {
+      float: right;
+      border-radius:  20px;
+      border: none;
+      background-color:  #4CDDBC;
+      color: white;
+      padding:  7px 30px;
+      font-size: 18px;
+    }
+  }
+
   &-image {
     border-radius: 50%;
     float: left;
@@ -29,7 +60,7 @@
   &-list {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 500px;
+    height: calc(100vh - 60px - 57px);
 
     &-title {
       padding:  20px 0;
