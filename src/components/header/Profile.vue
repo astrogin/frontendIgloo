@@ -5,12 +5,12 @@
         v-for="(item, index) in profileData"
         :key="index" class="header-profile-item">
 
-        <a :href="item.link">
+        <router-link :to="item.link">
           {{item.title}}
           <span v-if="!!item.badge" class="header-profile-badge">
             {{item.badge}}
           </span>
-        </a>
+        </router-link>
       </li>
     </ul>
 
@@ -29,7 +29,7 @@
     data() {
       return {
         profileData: [
-          {title: 'Edit profile', link: '#'},
+          {title: 'Edit profile', link: '/edit-profile'},
           {title: 'My experiences', link: '#', badge: 8},
           {title: 'Review', link: '#'},
           {title: 'Account settings', link: '#'},

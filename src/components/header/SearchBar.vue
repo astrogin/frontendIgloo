@@ -12,7 +12,13 @@
     </el-col>
 
     <el-col :span="18">
-      <base-filter width="620" text="Date &amp; Time">
+      <el-date-picker
+        v-model="dates"
+        type="daterange"
+        range-separator="To"
+        start-placeholder="Start date"
+        end-placeholder="End date"/>
+      <!-- <base-filter width="620" text="Date &amp; Time">
         <date-picker/>
         <el-row>
           <el-col><div class="searchbar-date-title">Time</div></el-col>
@@ -35,10 +41,10 @@
         <el-row>
           <el-col class="searchbar-right">
             <purple-text-button>Clear</purple-text-button>
-            <colorful-button>Apply</colorful-button>
+            <button-cyan>Apply</button-cyan>
           </el-col>
         </el-row>
-      </base-filter>
+      </base-filter> -->
       <base-filter width="530" text="Guests">
         <el-row :gutter="10">
           <el-col :span="8">
@@ -65,7 +71,7 @@
         </el-row>
         <el-row>
           <el-col class="searchbar-right">
-            <el-button type="danger" round>Apply</el-button>
+            <button-cyan>Apply</button-cyan>
           </el-col>
         </el-row>
       </base-filter>
@@ -92,7 +98,7 @@
         </el-row>
         <el-row>
           <el-col class="searchbar-right">
-            <el-button type="warning" round>Apply</el-button>
+            <button-cyan>Apply</button-cyan>
           </el-col>
         </el-row>
       </base-filter>
@@ -114,7 +120,7 @@
         </el-checkbox-group>
         <el-row>
           <el-col class="searchbar-right">
-            <el-button class="searchbar-button-purple" round>Apply</el-button>
+            <button-cyan>Apply</button-cyan>
           </el-col>
         </el-row>
       </base-filter>
@@ -132,10 +138,7 @@
         </el-row>
         <el-row>
           <el-col class="searchbar-right">
-            <el-button :class="{
-              'searchbar-book-button': !instantBook,
-              'searchbar-book-button-active': instantBook,
-            }" round>Apply</el-button>
+            <button-cyan>Apply</button-cyan>
           </el-col>
         </el-row>
       </base-filter>
@@ -147,7 +150,7 @@
 </template>
 
 <script>
-  import ColorfulButton from '@/ui-kit/buttons/ButtonColorful';
+  import ButtonCyan from '@/ui-kit/buttons/ButtonCyan';
   import PurpleTextButton from '@/ui-kit/buttons/ButtonPurpleText';
 
   import DatePicker from '@/components/DatePicker.vue';
@@ -157,12 +160,13 @@
     components: {
       BaseFilter,
       DatePicker,
-      ColorfulButton,
+      ButtonCyan,
       PurpleTextButton,
     },
     data() {
       return {
         searchInput: '',
+        dates: [],
         timeRange: [0, 6],
         price: [500, 16850],
         categories: ['Travel', 'Relax and beauty'],

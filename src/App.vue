@@ -1,10 +1,12 @@
 <template>
   <el-container>
-    <div class="w100">
-      <app-header/>
-      <router-view/>
-      <modal-container/>
-    </div>
+    <el-row class="w100">
+      <el-col class="h100">
+        <app-header/>
+        <router-view/>
+        <modal-container/>
+      </el-col>
+    </el-row>
   </el-container>
 </template>
 

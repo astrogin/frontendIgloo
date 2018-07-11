@@ -10,6 +10,7 @@ import {
   faSearch,
   faArrowLeft,
   faArrowRight,
+  faCheck,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faBell);
@@ -21,3 +22,4 @@ library.add(faUser);
 library.add(faSearch);
 library.add(faArrowLeft);
 library.add(faArrowRight);
+library.add(faCheck);

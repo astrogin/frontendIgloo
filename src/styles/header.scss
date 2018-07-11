@@ -5,7 +5,7 @@
 
   &-title {
     text-transform: uppercase;
-    color: $text-purple-color;
+    color: $color-purple;
     font-size: 1.53em;
     font-weight: 500;
     display: inline-block;
@@ -44,7 +44,7 @@
   &-profile-badge {
     padding: 0 10px;
     border-radius: 35%;
-    background-color: $text-purple-color;
+    background-color: $color-purple;
     color: white;
     float: right;
     vertical-align: middle;
@@ -67,7 +67,7 @@ li.header-profile-item > a:link, li.header-profile-item > a:visited {
 }
 
 .item-purple > .item-text {
-  color: $text-purple-color;
+  color: $color-purple;
 }
 
 .item-text {
@@ -100,5 +100,5 @@ li.header-profile-item > a:link, li.header-profile-item > a:visited {
 }
 
 .dot-badge > .el-badge__content {
-  background-color: $text-purple-color;
+  background-color: $color-purple;
 }

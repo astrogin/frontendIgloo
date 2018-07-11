@@ -11,7 +11,7 @@
     <tr v-for="i in 5" :key="'week' + i">
       <th
         v-for="j in 7" :key="'day' + j + 'ofweek' + i + uniqKey"
-        :ref="array[7*(i-1)+j-1]"
+        :ref="7*(i-1)+j-1"
         :class="{'datepicker-selected': isSelected(7*(i-1)+j-1)}"
         class="pointer"
         @click="handleMonthClick(array, 7*(i-1)+j-1)">
@@ -45,7 +45,7 @@
 
         const isSelected = this.selectedDays.indexOf(el) !== -1;
 
-        this.$refs[el][0].classList.toggle('datepicker-selected');
+        this.$refs[index][0].classList.toggle('datepicker-selected');
 
         if (isSelected) {
           this.selectedDays.splice(el, 1);

@@ -41,9 +41,9 @@
               <a href="#" class="dialog-form-text dialog-secondary-text">
                 Forgot password
               </a>
-              <cbutton class="dialog-form-button" @click="handleSubmit">
+              <button-cyan class="dialog-form-button" @click="handleSubmit">
                 Sign in
-              </cbutton>
+              </button-cyan>
             </div>
           </el-form-item>
         </el-form>
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-  import ColorfulButton from '@/ui-kit/buttons/ButtonColorful';
+  import ButtonCyan from '@/ui-kit/buttons/ButtonCyan';
 
   import SignInFacebook from '@/components/cards/login/SignInFacebook';
   import SignInGoogle from '@/components/cards/login//SignInGoogle';
@@ -62,7 +62,7 @@
     components: {
       SignInFacebook,
       SignInGoogle,
-      'cbutton': ColorfulButton,
+      ButtonCyan,
     },
     data() {
       return {

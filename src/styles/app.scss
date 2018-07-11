@@ -6,6 +6,10 @@
 @import './logincard.scss';
 @import './notifications.scss';
 @import './datepicker.scss';
+@import './messages.scss';
+@import './element-restyle.scss';
+@import './become-host.scss';
+@import './edit-profile.scss';
 
 body {
   margin: 0px;
@@ -16,12 +20,21 @@ body {
   width: 100%;
 }
 
+.h100 {
+  height: 100%;
+}
+
+.el-container {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
 .pointer {
   cursor: pointer;
 }
 
 .text-purple {
-  color: $text-purple-color;
+  color: $color-purple;
 }
 
 .text-bold {
@@ -33,7 +46,7 @@ body {
 }
 
 .button-purple {
-  color: $text-purple-color !important;
+  color: $color-purple !important;
 }
 
 .button-purple:hover {
@@ -51,4 +64,12 @@ a:link, a:visited {
 
 .right {
   float: right;
+}
+
+.purple-check {
+  background-color: $color-purple;
+  color: white;
+  padding: 5px 15px;
+  font-size: 0.95rem;
+  border-radius: 20px;
 }

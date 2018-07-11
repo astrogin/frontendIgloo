@@ -67,7 +67,7 @@
     }
 
     .el-pagination.is-background .el-pager li:not(.disabled):hover {
-      color: $text-purple-color;
+      color: $color-purple;
     }
 
     .el-pager .more::before {
@@ -106,7 +106,7 @@
     }
 
     > span.active {
-      color: $text-purple-color;
+      color: $color-purple;
     }
   }
 

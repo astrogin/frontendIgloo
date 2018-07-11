@@ -17,8 +17,8 @@
 
   &-button {
     margin-left: 10px !important;
-    background-color: $light_gray !important;
-    border-color: $light_gray !important;
+    background-color: $light-gray !important;
+    border-color: $light-gray !important;
     
     &-text {
       color: $dark_gray;
@@ -139,7 +139,7 @@
       .el-input-number__decrease, .el-input-number__increase {
         background-color: white !important;
         font-size: 2rem;
-        color: $text-purple-color;
+        color: $color-purple;
       }
   
       .el-input__inner {
@@ -175,8 +175,8 @@
       }
 
       .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
-        background-color: $text-purple-color;
-        border-color: $text-purple-color;
+        background-color: $color-purple;
+        border-color: $color-purple;
         border-radius: 50%;
       }
     }
@@ -184,7 +184,7 @@
 }
 
 .el-slider__bar {
-  background-color: $text-purple-color !important;
+  background-color: $color-purple !important;
   height: 10px !important;
 }
 
@@ -192,7 +192,7 @@
   width: 32px !important;
   height: 32px !important;
   border-width: 1px !important;
-  border-color: $text-purple-color !important;
+  border-color: $color-purple !important;
 }
 
 .el-slider__runway {

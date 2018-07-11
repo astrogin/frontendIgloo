@@ -5,7 +5,9 @@
     :close-on-click-modal="true"
     center
     custom-class="dialog">
-    <component :is="modalComponent"/>
+    <transition name="zoom">
+      <component :is="modalComponent"/>
+    </transition>
     <div slot="footer" class="dialog-footer">
       <component :is="modalComponentFooter"/>
     </div>

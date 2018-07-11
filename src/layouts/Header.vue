@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <el-row>
     <el-header class="header">
       <span class="header-title">
         <router-link to="/">
@@ -8,9 +8,11 @@
       </span>
 
       <span class="header-right">
-        <colorful-button class="header-item item-button">
-          Become a Host
-        </colorful-button>
+        <router-link to="/become-host">
+          <colorful-button class="header-item item-button">
+            Become a Host
+          </colorful-button>
+        </router-link>
 
         <menu-dropdown
           :elements="currencyElements"
@@ -31,8 +33,7 @@
         <header-profile/>
       </span>
     </el-header>
-    <search-bar />
-  </div>
+  </el-row>
 </template>
 
 <script>
@@ -42,7 +43,6 @@
   import HeaderProfile from '@/components/header/Profile';
   import HeaderComments from '@/components/header/Comments';
   import HeaderNotifications from '@/components/header/Notifications';
-  import SearchBar from '@/components/header/SearchBar';
 
   export default {
     components: {
@@ -51,7 +51,6 @@
       HeaderProfile,
       HeaderComments,
       HeaderNotifications,
-      SearchBar,
     },
 
     data() {
