@@ -90,18 +90,13 @@
         return this.handleMonthArray(this.nextMonthDate);
       },
     },
-    created() {
-
-    },
     methods: {
       getMonthName(month) {
         return getMonthName(month, this.monthTitles);
       },
       handleMonthArray(date) {
         const d = new Date(date);
-        const m = d.getMonth();
-        const y = d.getFullYear();
-        const month = getDaysInMonth(m, y);
+        const month = getDaysInMonth(d.getMonth(), d.getFullYear());
         const day = new Date(month[0]).getDay();
 
         // Add empty elements if element pos don't equal week day
