@@ -1,0 +1,197 @@
+.bh {
+
+  &-step-card {
+
+    &-step {
+      color: #FF798A;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    &-header {
+      padding: 10px 0;
+      color: #4A4A4A;
+      font-size: 1.3rem;
+      text-align: left;
+    }
+
+    &-body {
+      color: #9B9B9B;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+  }
+
+  &-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &-bg-img {
+      height: 700px;
+      background-image: url('/assets/img/become-host/1.jpg');
+    }
+
+    &-header {
+      font-size: 3rem;
+    }
+
+    &-subheader {
+      font-size: 4rem;
+      font-weight: normal;
+    }
+
+    &-button {
+      color: white !important;
+      background-color: rgba(0,0,0,0) !important;
+      border-width: 2px !important;
+      border-color: white !important;
+      font-size: 1.2rem !important;
+      border-radius: 30px !important;
+      padding: 10px 35px !important;
+      margin: 20px !important;
+    }
+  }
+
+  &-2 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-35%, -50%);
+
+    &-bg-img {
+      height: 700px;
+      background-image: url('/assets/img/become-host/2.jpg');
+      background-size: cover;
+    }
+
+    &-header {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    &-text {
+      font-size: 1.2rem;
+    }
+  }
+
+  &-3 {
+    &-1 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      width: 65%;
+
+      &-bg-img {
+        height: 700px;
+        background-image: url('/assets/img/become-host/3-1.jpeg');
+        background-size: cover;
+        background-position-y: center;
+      }
+
+      &-header {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      &-text {
+        margin-top: 20px;
+        font-size: 1.1rem;
+      }
+    }
+
+    &-2 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      width: 87%;
+
+      &-bg-img {
+        height: 700px;
+        background-image: url('/assets/img/become-host/3-2.jpeg');
+        background-position-y: center;
+        background-size: cover;
+      }
+
+      &-header {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #4A4A4A;
+      }
+
+      &-text {
+        font-size: 1.1rem;
+        color: #4A4A4A;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &-4 {
+    &-1 {
+      height: 700px;
+      background-size: cover;
+      background-image: url('/assets/img/become-host/4-1.jpg');
+      background-position-x: center;
+    }
+
+    &-2 {
+      height: 700px;
+      background-size: cover;
+      background-image: url('/assets/img/become-host/4-2.jpg');
+    }
+  }
+
+  &-5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &-bg-img {
+      height: 700px;
+      background-image: url('/assets/img/become-host/5.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+
+    &-header {
+      font-size: 3rem;
+      color: #4A4A4A;
+    }
+
+    &-text {
+      font-size: 1.1rem;
+      color: #4A4A4A;
+      margin-top: 20px;
+    }
+  }
+
+  &-6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    color: #4A4A4A;
+
+    &-bg-img {
+      height: 700px;
+      background-image: url('/assets/img/become-host/6.jpeg');
+      background-position: center;
+      background-size: cover;
+    }
+
+    &-header {
+      font-size: 4rem;
+    }
+
+    &-text {
+      font-size: 1.2rem;
+    }
+  }
+}

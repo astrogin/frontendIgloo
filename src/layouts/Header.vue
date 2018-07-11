@@ -8,9 +8,11 @@
       </span>
 
       <span class="header-right">
-        <colorful-button class="header-item item-button">
-          Become a Host
-        </colorful-button>
+        <router-link to="/become-host">
+          <colorful-button class="header-item item-button">
+            Become a Host
+          </colorful-button>
+        </router-link>
 
         <menu-dropdown
           :elements="currencyElements"
