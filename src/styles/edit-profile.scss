@@ -1,6 +1,14 @@
 .ep {
-  width: 80%;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 50px;
+  &-row {
+    margin: 10px 0;
+  }
+
+  &-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  &-subtitle {
+    color: #A4A4A4;
+  }
 }

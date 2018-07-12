@@ -12,7 +12,7 @@
       :text="comment.text"
       :date="comment.date"/>
 
-    <router-link to="/messages" tag="div" class="comments-button">
+    <router-link :to="{name: 'user.messages'}" tag="div" class="comments-button">
       <purple-button @click.native="isOpened = false">See more</purple-button>
     </router-link>
 
