@@ -1,9 +1,22 @@
 <template>
   <el-row :gutter="30">
     <el-col :span="6">
-      <div style="background-color: red;">
-        PROFILE_PHOTO
-      </div>
+      <span class="ep-title">Profile photo</span>
+      <el-row>
+        <el-col>
+          <div class="ep-image">
+            <img src="http://via.placeholder.com/200">
+          </div>
+        </el-col>
+      </el-row>
+      <el-row class="ep-row">
+        <el-col><button-purple>Upload file</button-purple></el-col>
+      </el-row>
+      <el-row>
+        <el-col>
+          <p>Please change the word, I copied from Airbnb : ..............</p>
+        </el-col>
+      </el-row>
     </el-col>
     <el-col :span="18">
       <el-row>

@@ -26,3 +26,22 @@
 .el-input.is-active .el-input__inner, .el-input__inner:focus {
   border-color: $color-purple !important;
 }
+
+// Radio
+.el-radio__input.is-checked .el-radio__inner, .el-radio__input.is-indeterminate .el-radio__inner {
+  background-color: $color-purple !important;
+  border-color: $color-purple !important;
+  border-radius: 50%;
+}
+
+.el-radio__label {
+  color: #9B9B9B !important;
+  font-size: 0.9rem !important;
+}
+
+.el-radio__inner {
+  width: 20px !important;
+  height: 20px !important;
+  border-width: 4px !important;
+  border-radius: 50% !important;
+}

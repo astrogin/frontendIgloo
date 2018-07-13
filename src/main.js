@@ -10,7 +10,7 @@ import ElementLocaleEN from 'element-ui/lib/locale/lang/en.js';
 import ElementLocale from 'element-ui/lib/locale';
 
 import 'element-ui/lib/theme-chalk/index.css';
-
+// import 'slick-carousel/slick/slick.css';
 import 'vue2-animate/dist/vue2-animate.min.css';
 
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';

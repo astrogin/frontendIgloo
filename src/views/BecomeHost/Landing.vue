@@ -8,7 +8,11 @@
             <span class="text-bold">GO</span>AROUND
           </div>
           <div>
-            <el-button class="bh-1-button">Get started</el-button>
+            <el-button
+              class="bh-1-button"
+              @click.native="handleStart">
+              Get started
+            </el-button>
           </div>
         </div>
       </el-col>
@@ -84,7 +88,7 @@
       </el-col>
     </el-row>
 
-    <el-row :gutter="20" type="flex" justify="center">
+    <el-row :gutter="20" type="flex" justify="center" class="bh-step-cards">
       <el-col :span="6">
         <el-card class="bh-step-card">
           <div class="bh-step-card-step">Step 1</div>
@@ -125,11 +129,15 @@
 
 <script>
   export default {
-
+    methods: {
+      handleStart() {
+        this.$router.push({name: 'become-host.step', params: {step: 1}});
+      },
+    },
   };
 </script>
 
-<style scoped>
+<style>
   .landing-container {
     position: relative;
     text-align: center;

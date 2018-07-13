@@ -3,6 +3,7 @@ import Router from 'vue-router';
 
 import Homepage from '@/views/Homepage';
 import BecomeHostLanding from '@/views/BecomeHost/Landing';
+import BecomeHostLayout from '@/views/BecomeHost/StepsLayout.vue';
 
 // User
 import UserLayout from '@/views/user/Layout';
@@ -20,7 +21,16 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
-    {path: '/become-host', component: BecomeHostLanding},
+    {
+      path: '/become-host/:step',
+      name: 'become-host.step',
+      component: BecomeHostLayout,
+    },
+    {
+      path: '/become-host',
+      name: 'become-host',
+      component: BecomeHostLanding,
+    },
     {
       path: '/user',
       name: 'user',
