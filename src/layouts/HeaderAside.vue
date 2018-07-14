@@ -14,20 +14,28 @@
       <div><a href="#">My Booking</a></div>
       <div><a href="#">Saved</a></div>
       <div>
-        <el-badge is-dot class="dot-badge">
-          <font-awesome-icon icon="comments" size="lg"/>
-        </el-badge>
+        <router-link :to="{name: 'user.messages'}">
+          <el-badge is-dot class="dot-badge">
+            <font-awesome-icon icon="comments" size="lg"/>
+          </el-badge>
+        </router-link>
       </div>
       <div>
-        <el-badge is-dot class="dot-badge">
-          <font-awesome-icon icon="bell" size="lg"/>
-        </el-badge>
+        <router-link :to="{name: 'user.notifications'}">
+          <el-badge is-dot class="dot-badge">
+            <font-awesome-icon icon="bell" size="lg"/>
+          </el-badge>
+        </router-link>
       </div>
       <div><a href="#">Help</a></div>
     </div>
 
     <div class="group">
-      <div>Edit profile</div>
+      <div>
+        <router-link :to="{name: 'user.profile.edit'}">
+          Edit profile
+        </router-link>
+      </div>
       <div>My experiences <span class="header-profile-badge">8</span></div>
       <div>Review</div>
       <div>Account settings</div>

@@ -2,12 +2,12 @@
   <div>
     <el-row>
       <el-col>
-        <h1>
+        <h3>
           What experiences did you host? And how long?
           <span class="right">
             <button-purple>+ Add more</button-purple>
           </span>
-        </h1>
+        </h3>
         <el-row :gutter="20">
           <el-col :span="12">
             <el-input type="text" placeholder="Your experience"/>

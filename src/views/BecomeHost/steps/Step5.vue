@@ -2,8 +2,8 @@
   <div>
     <el-row>
       <el-col>
-        <h2>Lastly, tell us</h2>
-        <h1>What makes you to be a good host?</h1>
+        <h4>Lastly, tell us</h4>
+        <h3>What makes you to be a good host?</h3>
         <el-input
           v-model="goodHost"
           :rows="10"
@@ -13,7 +13,7 @@
     </el-row>
     <el-row>
       <el-col>
-        <h1>To let you know before submit this form</h1>
+        <h3>To let you know before submit this form</h3>
         <p>
           You cannot fix or send other applications until we accept or reject this one.
         </p>

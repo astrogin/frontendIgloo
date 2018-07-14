@@ -2,7 +2,7 @@
   <div class="bh-steps">
     <el-row>
       <el-col>
-        <h1>Your application has been sent</h1>
+        <h2 class="text-purple">Your application has been sent</h2>
         <p>Let us review your request.</p>
         <p>If we agree that your request is interested, we would like to test and learn more about you.</p>
         <p>You can check out status by email or check on user profile</p>
