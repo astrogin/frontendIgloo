@@ -18,7 +18,9 @@
           icon="circle" />
       </el-col>
       <el-col :span="3">
-        <button-cyan class="right" @click.native="nextStep">Next Step</button-cyan>
+        <button-cyan class="right" @click.native="nextStep">
+          {{stepNumber === 5 ? 'Submit' : 'Next Step'}}
+        </button-cyan>
       </el-col>
     </el-row>
   </div>
@@ -63,10 +65,14 @@
     },
     methods: {
       nextStep() {
-        this.$router.push({
-          name: 'become-host.step',
-          params: {step: this.stepNumber + 1},
-        });
+        if (this.stepNumber === 5) {
+          this.$router.push({name: 'become-host.success'});
+        } else {
+          this.$router.push({
+            name: 'become-host.step',
+            params: {step: this.stepNumber + 1},
+          });
+        }
       },
     },
   };

@@ -32,11 +32,17 @@
         <a href="#" class="header-item item-text">Help</a>
         <header-profile/>
       </span>
+
+      <span class="header-right-icon">
+        <font-awesome-icon icon="bars" size="2x" @click="toggleHeaderAside"/>
+      </span>
     </el-header>
   </el-row>
 </template>
 
 <script>
+  import {mapActions} from 'vuex';
+
   import MenuDropdown from '@/ui-kit/MenuDropdown';
   import ColorfulButton from '@/ui-kit/buttons/ButtonColorful';
 
@@ -61,6 +67,8 @@
     },
 
     methods: {
+      ...mapActions(['toggleHeaderAside']),
+
       changeCurrency(newCurrency) {
         // get string by index
         // const s = this.currencyElements[newCurrency];

@@ -12,6 +12,7 @@ import {
   faArrowRight,
   faCheck,
   faCircle,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faBell);
@@ -25,3 +26,4 @@ library.add(faArrowLeft);
 library.add(faArrowRight);
 library.add(faCheck);
 library.add(faCircle);
+library.add(faBars);

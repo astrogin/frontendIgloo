@@ -11,6 +11,7 @@ import ElementLocale from 'element-ui/lib/locale';
 
 import 'element-ui/lib/theme-chalk/index.css';
 // import 'slick-carousel/slick/slick.css';
+import 'element-ui/lib/theme-chalk/display.css';
 import 'vue2-animate/dist/vue2-animate.min.css';
 
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
@@ -21,6 +22,11 @@ ElementLocale.use(ElementLocaleEN);
 Vue.use(Element);
 
 Vue.config.productionTip = false;
+
+router.afterEach((to, from) => {
+  // Close aside after route changes
+  store.dispatch('closeAside');
+});
 
 new Vue({
   router,
