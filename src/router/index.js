@@ -6,6 +6,7 @@ import Notifications from '@/views/Notifications';
 import Messages from '@/views/Messages';
 import BecomeHostLanding from '@/views/BecomeHost/Landing';
 import EditProfile from '@/views/EditProfile';
+import UserExperiences from '@/views/User/experience/MyExperiences';
 
 Vue.use(Router);
 
@@ -16,5 +17,6 @@ export default new Router({
     {path: '/notifications', component: Notifications},
     {path: '/messages', component: Messages},
     {path: '/edit-profile', component: EditProfile},
+    {path: '/user/experiences', component: UserExperiences},
   ],
 });

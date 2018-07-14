@@ -30,7 +30,7 @@
       return {
         profileData: [
           {title: 'Edit profile', link: '/edit-profile'},
-          {title: 'My experiences', link: '#', badge: 8},
+          {title: 'My experiences', link: '/user/experiences', badge: 8},
           {title: 'Review', link: '#'},
           {title: 'Account settings', link: '#'},
           {title: 'Refer host', link: '#'},
