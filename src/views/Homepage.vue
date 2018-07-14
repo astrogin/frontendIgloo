@@ -1,6 +1,6 @@
 <template>
   <div>
-    <search-bar />
+    <!-- <search-bar /> -->
     <p>Some homepage</p>
     <el-button @click.native="openSignUp">Sign Up</el-button>
     <el-button @click.native="openSignIn">Sign In</el-button>

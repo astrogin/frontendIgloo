@@ -29,7 +29,7 @@
     data() {
       return {
         profileData: [
-          {title: 'Edit profile', link: '/edit-profile'},
+          {title: 'Edit profile', link: {name: 'user.profile.edit'}},
           {title: 'My experiences', link: '#', badge: 8},
           {title: 'Review', link: '#'},
           {title: 'Account settings', link: '#'},
