@@ -6,7 +6,7 @@ import Notifications from '@/views/Notifications';
 import Messages from '@/views/Messages';
 import BecomeHostLanding from '@/views/BecomeHost/Landing';
 import EditProfile from '@/views/EditProfile';
-import UserExperiences from '@/views/User/experience/MyExperiences';
+import UserExperiences from '@/views/User/experience/Experiences';
 
 Vue.use(Router);
 

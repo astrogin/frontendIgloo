@@ -1,0 +1,21 @@
+.exp-card-container {
+  .exp-price-rate-container {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    .exp-price-container {
+      margin-right: 20px;
+      display: inline-block;
+      h5, div {
+        display: inline-block;
+      }
+      h5 {
+        color: #808080;
+        margin: 0;
+      }
+    }
+    .exp-rate-container {
+      display: inline-block;
+    }
+  }
+}
