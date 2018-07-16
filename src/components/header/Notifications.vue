@@ -30,7 +30,7 @@
         :key="notif.id"/>
     </template>
 
-    <router-link to="/notifications" tag="div" class="comments-button">
+    <router-link :to="{name: 'user.notifications'}" tag="div" class="comments-button">
       <purple-button @click.native="isOpened = false">See more</purple-button>
     </router-link>
 

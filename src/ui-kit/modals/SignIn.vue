@@ -53,7 +53,7 @@
 </template>
 
 <script>
-  import ButtonCyan from '@/ui-kit/buttons/ButtonCyan';
+  import ButtonCyan from '@/ui-kit/buttons/ButtonColorful.vue';
 
   import SignInFacebook from '@/components/cards/login/SignInFacebook';
   import SignInGoogle from '@/components/cards/login//SignInGoogle';

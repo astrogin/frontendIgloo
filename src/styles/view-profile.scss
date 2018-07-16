@@ -1,0 +1,71 @@
+.vp {
+  &-header {
+    &-image {
+      float: left;
+      border-radius: 50%;
+    }
+
+    &-body {
+      padding: 0 20px;
+
+      > div {
+        margin: 10px 0;
+      }
+    }
+
+    &-name {
+      color: #808080;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &-place {
+      color: #4A4A4A;
+      font-weight: bold;
+    }
+
+    &-joined {
+      color: #A9A9A9;
+      font-size: 0.9rem;
+    }
+  }
+
+  &-badges {
+    margin: 20px 0;
+
+    > span {
+      margin-right: 10px;
+      background-color: white;
+      color: #9B9B9B;
+      padding: 5px 15px;
+      font-size: 0.95rem;
+      border-radius: 20px;
+      border: 1px solid #E1E0E1;
+    }
+
+    > span.check {
+      background-color: $color-purple;
+      color: white;
+    }
+  }
+
+  &-title {
+    color: #ACACAC;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  &-text {
+    color: #525252;
+    font-size: 1.2rem;
+
+    &-big {
+      color: #525252;
+      font-size: 1.5rem;
+    }
+  }
+
+  &-row {
+    margin: 20px 0;
+  }
+}

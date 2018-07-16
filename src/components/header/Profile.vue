@@ -13,7 +13,6 @@
         </router-link>
       </li>
     </ul>
-
     <img slot="reference" src="http://via.placeholder.com/45x45" class="header-item item-img">
     <span slot="color" class="header-item item-text">Christina</span>
   </header-popover>
@@ -29,8 +28,8 @@
     data() {
       return {
         profileData: [
-          {title: 'Edit profile', link: '/edit-profile'},
-          {title: 'My experiences', link: '/user/experiences', badge: 8},
+          {title: 'Edit profile', link: {name: 'user.profile.edit'}},
+          {title: 'My experiences', link: {name: 'user.experiences'}, badge: 8},
           {title: 'Review', link: '#'},
           {title: 'Account settings', link: '#'},
           {title: 'Refer host', link: '#'},

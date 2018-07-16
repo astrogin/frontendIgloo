@@ -1,0 +1,53 @@
+.experience-view-container {
+  text-align: center;
+  .category-container {
+    padding: 18px 0 21px 0;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .experience-title {
+    font-size: 26px;
+    color: #808080;
+    p {
+      display: inline-block;
+      font-size: 12px;
+      vertical-align: middle;
+    }
+  }
+  .experience-container {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+  }
+  .my-experiences-container {
+    text-align: left;
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 80px;
+    .experience-title-req-button-container {
+      h1 {
+        display: inline-block;
+      }
+      .experience-request-button {
+        position: relative;
+        float: right;
+        margin-top: 26px;
+        left: -35px;
+        p {
+          margin: 0;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .pending-experience-container {
+    background-color: #f3f3f3;
+    .pending-experience-inside-container {
+      margin-top: 81px;
+      text-align: left;
+      width: 80%;
+      display: inline-block;
+      h1 {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
