@@ -26,6 +26,17 @@
 .el-input.is-active .el-input__inner, .el-input__inner:focus {
   border-color: $color-purple !important;
 }
+.rewrite-rate {
+  .el-rate__icon {
+    font-size: 9px;
+    margin-right: 2px;
+  }
+
+  .el-rate__text {
+    color: #838383;
+    margin-left: 3px;
+  }
+}
 
 // Radio
 .el-radio__input.is-checked .el-radio__inner, .el-radio__input.is-indeterminate .el-radio__inner {

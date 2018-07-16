@@ -3,16 +3,18 @@ import Router from 'vue-router';
 
 import Homepage from '@/views/Homepage';
 import BecomeHostLanding from '@/views/BecomeHost/Landing';
+import UserExperiences from '@/views/User/experience/Experiences';
 import BecomeHostLayout from '@/views/BecomeHost/StepsLayout';
 import BecomeHostSuccess from '@/views/BecomeHost/Success';
 
 // User
-import UserLayout from '@/views/user/Layout';
-import UserProfileLayout from '@/views/user/profile/Layout';
-import UserProfileEdit from '@/views/user/profile/Edit';
-import UserProfileView from '@/views/user/profile/View';
-import UserMessages from '@/views/user/Messages';
-import UserNotifications from '@/views/user/Notifications';
+import UserLayout from '@/views/User/Layout';
+import UserProfileLayout from '@/views/User/profile/Layout';
+import UserProfileEdit from '@/views/User/profile/Edit';
+import UserProfileView from '@/views/User/profile/View';
+import UserMessages from '@/views/User/Messages';
+import UserNotifications from '@/views/User/Notifications';
+
 
 // Errors
 import Error404 from '@/views/404';
@@ -67,6 +69,11 @@ export default new Router({
           path: 'notifications',
           name: 'user.notifications',
           component: UserNotifications,
+        },
+        {
+          path: 'experiences',
+          name: 'user.experiences',
+          component: UserExperiences,
         },
       ],
     },

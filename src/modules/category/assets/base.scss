@@ -1,0 +1,11 @@
+.cat-container {
+  color: #9b9b9b;
+  p {
+    display: inline-block;
+    margin-right: 35px;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

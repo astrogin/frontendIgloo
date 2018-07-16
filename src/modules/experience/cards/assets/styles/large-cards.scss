@@ -1,0 +1,53 @@
+.exp-large-card-container {
+  max-width: 580px;
+  .exp-image {
+    height: 340px;
+  }
+  .exp-content {
+    border-bottom: 2px solid #f0eff0;
+    .exp-date-container {
+      margin-top: 10px;
+    }
+  }
+  .exp-category-container {
+    margin: 25px 0 15px 0;
+    div {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+  .exp-footer {
+    font-size: 14px;
+    display: inline-block;
+    color: #b9b8b9;
+    text-align: left;
+    width: 90%;
+    margin: 20px 0;
+    p {
+      margin: 0;
+    }
+    .exp-booked-container, .exp-request-container {
+      display: inline-block;
+    }
+    .exp-booked-container {
+      margin-right: 40px;
+    }
+    .exp-stat {
+      font-size: 24px;
+      color: #4a4a4a;
+      display: inline-block;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    .exp-pointer {
+      cursor: pointer;
+    }
+    .exp-purple {
+      color: #7929a6;
+    }
+    .exp-icono-arrow-right {
+      margin-left: 25px;
+      margin-bottom: 10px;
+    }
+  }
+}
