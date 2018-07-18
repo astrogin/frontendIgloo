@@ -2,7 +2,9 @@
   <div class="exp-cards-module">
     <div class="exp-card-container exp-small-card-container">
       <img :src="owner" class="exp-owner-image" alt="Owner Image">
-      <img :src="screen" class="exp-image" alt="Experience image">
+      <router-link :to="{name: 'experience'}">
+        <img :src="screen" class="exp-image" alt="Experience image">
+      </router-link>
       <div class="exp-content">
         <div class="exp-category-container">
           <h5>{{type}}</h5>
@@ -19,13 +21,13 @@
           <div class="exp-rate-container">
             <el-rate
               :colors="['#7929A6','#7929A6','#7929A6']"
+              :score-template="votes"
               v-model="rate"
               class="rewrite-rate"
               disabled
               disabled-void-color="#e1e0e1"
               show-score
-              text-color="#808080"
-              :score-template="votes" />
+              text-color="#808080" />
           </div>
         </div>
         <div class="exp-date-container">

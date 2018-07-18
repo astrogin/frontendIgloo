@@ -3,9 +3,10 @@ import Router from 'vue-router';
 
 import Homepage from '@/views/Homepage';
 import BecomeHostLanding from '@/views/BecomeHost/Landing';
-import UserExperiences from '@/views/User/experience/Experiences';
 import BecomeHostLayout from '@/views/BecomeHost/StepsLayout';
 import BecomeHostSuccess from '@/views/BecomeHost/Success';
+
+import Experience from '@/views/Experience/Experience';
 
 // User
 import UserLayout from '@/views/User/Layout';
@@ -14,6 +15,7 @@ import UserProfileEdit from '@/views/User/profile/Edit';
 import UserProfileView from '@/views/User/profile/View';
 import UserMessages from '@/views/User/Messages';
 import UserNotifications from '@/views/User/Notifications';
+import UserExperiences from '@/views/User/experience/Experiences';
 
 
 // Errors
@@ -77,6 +79,7 @@ export default new Router({
         },
       ],
     },
+    {path: '/experience', name: 'experience', component: Experience},
     {path: '/', component: Homepage},
     {path: '*', component: Error404},
   ],

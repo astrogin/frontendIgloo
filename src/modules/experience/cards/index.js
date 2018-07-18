@@ -1,11 +1,11 @@
-import MyExperience from './views/MyExperience.vue';
-import PendingExperience from './views/PendingExperience.vue';
-import Experience from './views/Experience.vue';
+import MyExperienceView from './views/myExperience.vue';
+import PendingExperienceView from './views/pendingExperience.vue';
+import ExperienceView from './views/experience.vue';
 
 import './assets/styles/style.scss';
 
-export let myExperience = MyExperience;
+export let myExperience = MyExperienceView;
 
-export let pendingExperience = PendingExperience;
+export let pendingExperience = PendingExperienceView;
 
-export let experience = Experience;
+export let experience = ExperienceView;
